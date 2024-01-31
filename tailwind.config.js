@@ -17,7 +17,8 @@ module.exports = {
       },
       animation: {
         marquee: "marquee 35s linear infinite",
-        marquee2: 'marquee2 35s linear infinite'
+        marquee2: "marquee2 35s linear infinite",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         marquee: {
@@ -28,8 +29,19 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
       },
     },
   },
   plugins: [nextui()],
 };
+

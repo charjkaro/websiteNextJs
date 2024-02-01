@@ -1,4 +1,5 @@
 import React from "react";
+import { ThreeDCardDemo, ThreeDCardDemoTwo } from "../Services/transit/CardDemo";
 
 const AboutTeam = () => {
   return (
@@ -39,13 +40,16 @@ function ProfileCard({}) {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="w-full absolute top-0 z-10 h-80 bg-red-500 opacity-0 hover:opacity-100 flex flex-col justify-evenly p-5">
+      <div className=""></div>
+    
+      <div className="w-full absolute top-0 z-10 h-80 bg-red-500 transition-opacity ease-out duration-300 opacity-0 hover:opacity-100 flex flex-col justify-evenly p-5">
         <h1 className="text-white font-semibold text-3xl p-1 brightness-110">
           first Name <br /> last Name
         </h1>
         <h1 className="text-white font-bold text-2xl p-1 brightness-110">
           Title
         </h1>
+        
       </div>
     </div>
   );

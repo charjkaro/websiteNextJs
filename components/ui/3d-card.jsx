@@ -70,7 +70,7 @@ export const CardBody = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-3 p-8 w-4/5 border-4 hover:bg-gradient-to-tr from-violet-600 to-black via-transparent border-white rounded-full items-center [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
+        "grid grid-cols-3 p-8 w-4/5 border-4  transition-all ease-in duration-500 hover:bg-gradient-to-tr from-violet-600 to-black via-transparent border-white rounded-full items-center [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >

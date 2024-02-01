@@ -3,12 +3,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="p-20 flex flex-row-reverse justify-between">
-      <div className="flex items-center w-2/5 justify-center">
-        <div className="h-96 w-96 rounded-full bg-blue-500"></div>
+    <div className="lg:p-20 p-5 lg:flex flex-row-reverse justify-between">
+      <div className="flex items-center lg:w-2/5 justify-center">
+        {/* <div className="h-96 w-96 rounded-full bg-[url('https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/Company%20Profile.png?alt=media&token=50372bf8-4513-4196-9304-cc9533a3aa02')] bg-cover bg-center"></div> */}
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/Company%20Profile.png?alt=media&token=50372bf8-4513-4196-9304-cc9533a3aa02"
+          alt=""
+        />
       </div>
-      <div className="w-3/5">
-        <h1 className="text-6xl font-bold py-5">About Company</h1>
+      <div className="lg:w-3/5">
+        <h1 className="lg:text-6xl text-4xl font-bold py-5">About Company</h1>
         <div className="flex flex-col gap-4 text-lg text-gray-700 font-medium ">
           <p>
             Are you looking for a way to grow your business? Our digital

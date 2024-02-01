@@ -21,8 +21,8 @@ export default function CarouselLogo() {
           perView: 2,
         },
         640: {
-          perView: 1,
-          gap: 36,
+          perView: 2.5,
+          gap: 10,
         },
       },
     }).mount();

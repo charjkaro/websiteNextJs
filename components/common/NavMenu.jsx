@@ -19,16 +19,25 @@ export default function NavMenu() {
 
   return (
     <div className="flex flex-col gap-2">
-      <Button onPress={onOpen} className="bg-transparent">
+      <Button onClick={onOpen} className="bg-transparent">
         <svg
+          width={100}
+          height={100}
+          viewBox="0 0 24 24"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          width={60}
-          height={60}
-          viewBox="0 -960 960 960"
-          className="invert rounded"
-          
+          className="invert animate-pulse"
         >
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          <g id="Menu / Menu_Alt_02">
+            <path
+              id="Vector"
+              d="M11 17H19M5 12H19M11 7H19"
+              stroke="#000000"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
         </svg>
       </Button>
 
@@ -41,7 +50,75 @@ export default function NavMenu() {
         <ModalContent>
           {(onClose) => (
             <>
-              <div className="h-full w-full bg-green-400"></div>
+              <div className="h-full w-full bg-[#1b1b1b] text-white md:p-20 p-5 py-20">
+                <ul className="flex flex-col justify-evenly gap-5">
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 p-2 "
+                      href="/"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/services"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/about"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/contact"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/blog"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/careers"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/privacy-policy"
+                    >
+                      Privacy
+                    </a>
+                  </li>
+
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      href="/sitemap"
+                    >
+                      Sitemap
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </>
           )}
         </ModalContent>

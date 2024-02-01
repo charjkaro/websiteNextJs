@@ -19,8 +19,17 @@ module.exports = {
         marquee: "marquee 35s linear infinite",
         marquee2: "marquee2 35s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "meteor-effect": "meteor 30s linear infinite",
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
+        },
         marquee: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
@@ -44,4 +53,3 @@ module.exports = {
   },
   plugins: [nextui()],
 };
-

@@ -1,23 +1,14 @@
 import React from "react";
 import Navbar from "../common/Navbar";
-
+import { SpotlightPreview } from "../Services/transit/Random";
 
 const AboutHero = () => {
   return (
     <>
-      <div className=" bg-[url('https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center ">
-        <Navbar />
-        <div className="text-white p-20 text-5xl font-bold ">
-          <p className="p-1">
-            Cash ur Drive has been growing brands and businesses since 2009. We
-            continue that rich legacy through Borderless Creativity—operating,
-            innovating, and creating at the intersection of talent and
-            capabilities. Our experts in Public Relations, Consulting,
-            Advertising, Health, and Experience work fluidly across 131 offices
-            in 93 countries.
-          </p>
-        </div>
-      </div>
+      <SpotlightPreview
+      subTitle="We are experts in crafting dynamic and engaging outdoor advertising solutions that ensure your brand stands out. From transit advertisements and eye-catching billboards to below-the-line activations and events, we offer the perfect platforms to amplify your brand message and foster its growth. By working closely with our clients, we understand their goals and bring their vision to life while being mindful of budget and return on investment. Our innovative approach and commitment to excellence allow us to create advertising strategies that make a significant impact in the market. Let us help you elevate your brand and achieve your business objectives with our tailored outdoor advertising solutions."
+        title="Cash ur Drive"
+      />
 
       {/* our team section  */}
 

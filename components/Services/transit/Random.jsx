@@ -18,7 +18,7 @@ export function SpotlightPreview({title, subTitle}) {
             <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 overflow-hidden">
               {title}
             </h1>
-            <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+            <p className="mt-4 font-normal text-base text-neutral-300 max-w-3xl text-center mx-auto">
               {subTitle}
             </p>
           </div>
@@ -28,7 +28,7 @@ export function SpotlightPreview({title, subTitle}) {
         </div>
       </div>
       <div className="">
-     
+      <ThreeDCardDemo />
       </div>
     </>
   );

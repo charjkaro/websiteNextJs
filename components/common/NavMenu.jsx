@@ -19,7 +19,7 @@ export default function NavMenu() {
 
   return (
     <div className="flex flex-col gap-2">
-      <Button onClick={onOpen} className="bg-transparent">
+      <Button onClick={onOpen} className="bg-transparent ">
         <svg
           width={100}
           height={100}
@@ -54,23 +54,23 @@ export default function NavMenu() {
                 <ul className="flex flex-col justify-evenly gap-5">
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 p-2 "
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/"
                     >
-                      Home
+                      Home.
                     </a>
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/services"
                     >
-                      Services
+                      Services.
                     </a>
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/about"
                     >
                       About
@@ -78,7 +78,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/contact"
                     >
                       Contact
@@ -86,35 +86,35 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/blog"
                     >
-                      Blog
+                      Blog.
                     </a>
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/careers"
                     >
-                      Careers
+                      Careers.
                     </a>
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/privacy-policy"
                     >
-                      Privacy
+                      Privacy.
                     </a>
                   </li>
 
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-colors ease-linear duration-250 overflow-hidden p-2"
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/sitemap"
                     >
-                      Sitemap
+                      Sitemap.
                     </a>
                   </li>
                 </ul>

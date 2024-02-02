@@ -1,10 +1,12 @@
 import React from "react";
 import { ThreeDCardDemo } from "../Services/transit/CardDemo";
 
-const Services = () => {
+export const Services = () => {
   return (
     <div className="bg-[#1B1B1B] text-white">
-      <h1 className="text-center font-bold lg:text-6xl text-4xl pt-10 pb-5">Services</h1>
+      <h1 className="text-center font-bold lg:text-6xl text-4xl pt-10 pb-5">
+        Services
+      </h1>
       <p className="text-center lg:text-3xl text-xl font-semibold lg:px-40 py-2">
         At Success Trends, we are committed to delivering high-quality solutions
         that drive business growth.
@@ -14,22 +16,29 @@ const Services = () => {
         <ServiceComp     />
         <ServiceComp     />
         <ServiceComp     /> */}
-        <ThreeDCardDemo
+        <a href="/services/transit">
+          <ThreeDCardDemo
+            title="Transit Advertisement"
+            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+          />
+        </a>
+        <a href="/services/static">
+          <ThreeDCardDemo
+            title="Static Advertisement"
+            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+          />
+        </a>
+        <a href="/services/Digital">
+          <ThreeDCardDemo
+            title="Digital Marketing"
+            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+          />
+        </a>
+
+        {/* <ThreeDCardDemo
           title="Lead Magnet"
           subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
-        />
-        <ThreeDCardDemo
-          title="Lead Magnet"
-          subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
-        />
-        <ThreeDCardDemo
-          title="Lead Magnet"
-          subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
-        />
-        <ThreeDCardDemo
-          title="Lead Magnet"
-          subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
-        />
+        /> */}
       </div>
     </div>
   );

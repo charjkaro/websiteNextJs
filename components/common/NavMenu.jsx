@@ -76,20 +76,13 @@ export default function NavMenu() {
                       About.
                     </a>
                   </li>
+
                   <li className="overflow-hidden">
                     <a
                       className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
-                      href="/contact"
+                      href="/work"
                     >
-                      Contact.
-                    </a>
-                  </li>
-                  <li className="overflow-hidden">
-                    <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
-                      href="/blog"
-                    >
-                      Blog.
+                      Work.
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -98,6 +91,14 @@ export default function NavMenu() {
                       href="/careers"
                     >
                       Careers.
+                    </a>
+                  </li>
+                  <li className="overflow-hidden">
+                    <a
+                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      href="/contact"
+                    >
+                      Contact.
                     </a>
                   </li>
                   <li className="overflow-hidden">

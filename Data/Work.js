@@ -97,22 +97,22 @@ export const WorkData = [
       "One of the widely used modes of transport sprawling across every nook and corner of the city. In addition to this what can be turned as icing on the cake is that it ensures brand message is relayed perfectly at any point in time.",
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
-  {
-    id: "14",
-    title: "Appy Fizz",
-    img: "",
-    description:
-      "Nothing is bigger and better than a life size billboard cruising on the roads. Thereby, any communication placed on these buses will create an evident and unavoidable buzz.",
-    coveredLocations: ["South Delhi"],
-  },
-  {
-    id: "15",
-    title: "SAMSUNG",
-    img: "",
-    description:
-      "Located at high-footfall areas and junctures in the city these strategically placed billboard not only offer great visibility and recall for the brand but at the same time helps in creating Landmark for the brand.",
-    coveredLocations: ["South Delhi"],
-  },
+  // {
+  //   id: "14",
+  //   title: "Appy Fizz",
+  //   img: "",
+  //   description:
+  //     "Nothing is bigger and better than a life size billboard cruising on the roads. Thereby, any communication placed on these buses will create an evident and unavoidable buzz.",
+  //   coveredLocations: ["South Delhi"],
+  // },
+  // {
+  //   id: "15",
+  //   title: "SAMSUNG",
+  //   img: "",
+  //   description:
+  //     "Located at high-footfall areas and junctures in the city these strategically placed billboard not only offer great visibility and recall for the brand but at the same time helps in creating Landmark for the brand.",
+  //   coveredLocations: ["South Delhi"],
+  // },
   {
     id: "16",
     title: "Prasuma/ADDA 52",
@@ -121,14 +121,14 @@ export const WorkData = [
       "Fleet advertising is a highly effective branding option as it reaches a wide and diverse audience while moving throughout cities and towns. The large size of the truck provides ample space for creative and attention-grabbing designs. With the ability to target specific geographic areas and demographics",
     coveredLocations: ["Delhi"],
   },
-  {
-    id: "17",
-    title: "LENOVO",
-    img: "",
-    description:
-      "These stand alone Mupis are strategically placed in the vicinity of major Market Places, Eat Streets, and Pubs/Eateries which makes them an ideal avenue to relay brand communication and gain eyeballs for the brand.",
-    coveredLocations: ["Chandigarh"],
-  },
+  // {
+  //   id: "17",
+  //   title: "LENOVO",
+  //   img: "",
+  //   description:
+  //     "These stand alone Mupis are strategically placed in the vicinity of major Market Places, Eat Streets, and Pubs/Eateries which makes them an ideal avenue to relay brand communication and gain eyeballs for the brand.",
+  //   coveredLocations: ["Chandigarh"],
+  // },
   {
     id: "17",
     title: "CharjKaro",

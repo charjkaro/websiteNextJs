@@ -20,7 +20,7 @@ export default function CarouselControlsOutside() {
       },
       breakpoints: {
         1024: {
-          perView: 2,
+          perView: 1,
         },
         640: {
           perView: 1,
@@ -39,12 +39,11 @@ export default function CarouselControlsOutside() {
       <div className="glide-04 relative w-full">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
-          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 text-gray-500">
-            <CarouselSlide     />
-            <CarouselSlide     />
-            <CarouselSlide     />
-            <CarouselSlide     />
-            
+          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden py-5 text-gray-500">
+            <CarouselSlide />
+            <CarouselSlide />
+            <CarouselSlide />
+            <CarouselSlide />
           </ul>
         </div>
         {/*    <!-- Controls --> */}
@@ -101,37 +100,37 @@ export default function CarouselControlsOutside() {
   );
 }
 
-    function CarouselSlide({}) {
-      return (<li>
-              {
-    /* <img
+function CarouselSlide({}) {
+  return (
+    <li>
+      {/* <img
      src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-01.jpg"
      className="m-auto max-h-full w-full max-w-full"
-    /> */
-  }
-              <div className=" w-full   ">
-                <div className="flex justify-between">
-                  <div className="flex flex-col p-10 gap-4 justify-evenly w-1/2">
-                    <h1 className="font-bold text-4xl p-2">Retail Hub</h1>
-                    <p className="font-bold text-lg">
-                      At Success Trends, we are committed to delivering
-                      high-quality design solutions that drive business growth.
-                    </p>
-                    <p>
-                      Retail Hub is an incubator for D2C brands. With the right
-                      resources and expertise, Retail Hub develops brands into
-                      Digitally Native Vertical Brands (DNVB), enabling them
-                      with superior warehousing, digital marketing, and
-                      e-commerce infrastructure to reach their full potential.
-                    </p>
-                    <Button className="max-w-fit bg-black text-white rounded-none shadow-sm">Find out More</Button>
-                    
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-96 h-96 bg-black  rounded-full"></div>
-                  </div>
-                </div>
-              </div>
-            </li>);
-    }
-  
+    /> */}
+      <div className=" w-full h-fit  ">
+        <div className="flex flex-col-reverse items-center lg:flex-row  justify-between">
+          <div className="flex flex-col lg:p-10 p-5 gap-4 justify-evenly lg:w-1/2">
+            <h1 className="font-bold text-4xl p-2">Retail Hub</h1>
+            <p className="font-bold text-lg">
+              At Success Trends, we are committed to delivering high-quality
+              design solutions that drive business growth.
+            </p>
+            <p>
+              Retail Hub is an incubator for D2C brands. With the right
+              resources and expertise, Retail Hub develops brands into Digitally
+              Native Vertical Brands (DNVB), enabling them with superior
+              warehousing, digital marketing, and e-commerce infrastructure to
+              reach their full potential.
+            </p>
+            <Button className="max-w-fit bg-black text-white rounded-none shadow-sm">
+              Find out More
+            </Button>
+          </div>
+          <div className="flex items-center">
+            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black  rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+  );
+}

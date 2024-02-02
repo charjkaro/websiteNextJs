@@ -54,7 +54,7 @@ export default function NavMenu() {
                 <ul className="flex flex-col justify-evenly gap-5">
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="lg:text-8xl md:text-6xl text-4xl  hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
                       href="/"
                     >
                       Home.

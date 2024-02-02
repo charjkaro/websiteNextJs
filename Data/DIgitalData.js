@@ -1,0 +1,98 @@
+export const digitalData = [
+  {
+    id: 1,
+    title: "Social Media Managemnet ",
+    subTitle: "Creative",
+    img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2Fservices%2FSocial%20Media%20management.png?alt=media&token=7dd899ef-771f-4e7c-9fdd-8879303134a9",
+  },
+  {
+    id: 2,
+    title: "Content and Copywriting",
+    subTitle: "Creative",
+    img: "https://images.squarespace-cdn.com/content/v1/6172dcd4bbb48356f790fab1/1636631463080-01A80SYR0WHLHEMUB70U/Solveig-Klaus-Blog-Texte-schreiben-und-Geld-verdienen-vom-Schreiben-leben.jpg",
+  },
+  {
+    id: 3,
+    title: "Graphic Design ",
+    subTitle: "Creative",
+    img: "https://assets-global.website-files.com/5ea82056771c9dd4b6f61bdc/5ec9e7b1d0fb9bf5aba8d88c_PIN-BLOG-1270x720-What-is-the-difference-between-an-illustrator-and-a-graphic-designer-1.png",
+  },
+  {
+    id: 4,
+    title: "Video Editing ",
+    subTitle: "Creative",
+    img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2Fservices%2FVideo%20Editing.png?alt=media&token=c97e56ad-ef80-42ea-a856-a6f5f8a02470",
+  },
+  {
+    id: 5,
+    title: "Campaign Planning ",
+    subTitle: "Creative",
+    img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2Fservices%2FCampaign%20management.png?alt=media&token=864159f6-5b34-4aac-af71-dbb8dfb67eff",
+  },
+  {
+    id: 6,
+    title: "Influencer Marketing ",
+    subTitle: "Creative",
+    img: "https://live.staticflickr.com/65535/51283417704_af96733552_b.jpg",
+  },
+  {
+    id: 7,
+    title: "Brand Launch and Rebranding ",
+    subTitle: "Creative",
+    img: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Omoda_%26_Jaecoo_brand_launch_at_the_2023_Shanghai_Auto_Show.png",
+  },
+  {
+    id: 8,
+    title: "Media Buying ",
+    subTitle: "Media Solution",
+    img: "https://storage.needpix.com/rsynced_images/social-media-1405601_1280.png",
+  },
+  {
+    id: 9,
+    title: "Media Planning ",
+    subTitle: "Media Solution",
+    img: "https://images.pexels.com/photos/7688454/pexels-photo-7688454.jpeg",
+  },
+  {
+    id: 10,
+    title: "Performance Marketing ",
+    subTitle: "Media Solution",
+    img: "https://c.pxhere.com/images/63/63/c7c823330ec7d376ef4a7e896dd3-1451419.jpg!d",
+  },
+  {
+    id: 11,
+    title: "Search Engine Optimization ",
+    subTitle: "Digital",
+    img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2Fservices%2FSEO.png?alt=media&token=2c42c259-254f-44df-aeb1-0de7353b92cb",
+  },
+  {
+    id: 12,
+    title: "E-Commerce",
+    subTitle: "Digital",
+    img: "https://storage.needpix.com/rsynced_images/ecommerce-1992281_1280.png",
+  },
+  {
+    id: 13,
+    title: "UI/UX",
+    subTitle: "Digital",
+    img: "https://storage.needpix.com/rsynced_images/gui-2311260_1280.png",
+  },
+  {
+    id: 14,
+    title: "Email Marketing",
+    subTitle: "Digital",
+    img: "https://storage.needpix.com/rsynced_images/email-3543958_1280.jpg",
+  },
+  {
+    id: 15,
+    title: "Chat Bots",
+    subTitle: "Digital",
+    img: "https://c.pxhere.com/images/70/2f/7c674877048fcd4dff1aee4860fd-1584463.jpg!d",
+  },
+  {
+    id: 16,
+    title: "Automation",
+    subTitle: "Digital",
+    img: "https://c.pxhere.com/images/0b/7f/0bee770c7189df751cca18501290-1575621.jpg!d",
+  },
+];

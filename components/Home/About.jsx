@@ -11,28 +11,18 @@ const About = () => {
           alt=""
         />
       </div>
-      <div className="lg:w-3/5">
+      <div className="lg:w-2/5">
         <h1 className="lg:text-6xl text-4xl font-bold py-5">About Company</h1>
-        <div className="flex flex-col gap-4 text-lg text-gray-700 font-medium ">
+        <div className="flex flex-col gap-4 text-xl text-gray-700 font-medium ">
           <p>
-            Are you looking for a way to grow your business? Our digital
-            marketing agency can help. We offer a comprehensive suite of
-            services that can help you attract new customers, increase sales,
-            and improve your online presence.
+            We are experts in crafting dynamic and engaging outdoor advertising
+            solutions that ensure your brand stands out.
           </p>
           <p>
-            Our lead magnet is a great way to capture the attention of potential
-            customers and generate leads. It's a free resource that provides
-            valuable information about your products or services. Once you've
-            captured their attention, we can help you convert those leads into
-            customers.
-          </p>
-          <p>
-            We also offer SEO, PPC, and content writing services. SEO can help
-            you improve your website's ranking in search engines, PPC can help
-            you reach more potential customers with targeted ads, and content
-            writing can help you create high-quality content that will attract
-            and engage your audience.
+            From transit advertisements and eye-catching billboards to
+            below-the-line activations and events, we offer the perfect
+            platforms to amplify your brand message and foster its growth.
+            solutions that ensure your brand stands out.
           </p>
         </div>
       </div>

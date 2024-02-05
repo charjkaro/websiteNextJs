@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import { Button } from "@nextui-org/react";
+import { WorkData } from "@/Data/Work";
 
 export default function CarouselControlsOutside() {
   useEffect(() => {
@@ -40,10 +41,21 @@ export default function CarouselControlsOutside() {
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden py-5 text-gray-500">
+            {WorkData.slice(0, 5).map((item, index) => {
+              return (
+                <div key={index} className="">
+                  <CarouselSlide
+                    img={item.img}
+                    description={item.description}
+                    client={item.title}
+                  />
+                </div>
+              );
+            })}
+            {/*             
             <CarouselSlide />
             <CarouselSlide />
-            <CarouselSlide />
-            <CarouselSlide />
+            <CarouselSlide /> */}
           </ul>
         </div>
         {/*    <!-- Controls --> */}
@@ -100,7 +112,7 @@ export default function CarouselControlsOutside() {
   );
 }
 
-function CarouselSlide({}) {
+function CarouselSlide({ client, description, img }) {
   return (
     <li>
       {/* <img
@@ -109,25 +121,30 @@ function CarouselSlide({}) {
     /> */}
       <div className=" w-full h-fit  ">
         <div className="flex flex-col-reverse items-center lg:flex-row  justify-between">
-          <div className="flex flex-col lg:p-10 p-5 gap-4 justify-evenly lg:w-1/2">
-            <h1 className="font-bold text-4xl p-2">Retail Hub</h1>
-            <p className="font-bold text-lg">
-              At Success Trends, we are committed to delivering high-quality
-              design solutions that drive business growth.
-            </p>
-            <p>
+          <div className="flex flex-col lg:py-10 p-5 gap-4 justify-evenly lg:w-1/2">
+            <h1 className="font-bold text-4xl p-2">{client}</h1>
+            <p className="font-bold text-lg">{description}</p>
+            {/* <p>
               Retail Hub is an incubator for D2C brands. With the right
               resources and expertise, Retail Hub develops brands into Digitally
               Native Vertical Brands (DNVB), enabling them with superior
               warehousing, digital marketing, and e-commerce infrastructure to
               reach their full potential.
-            </p>
-            <Button className="max-w-fit bg-black text-white rounded-none shadow-sm">
-              Find out More
-            </Button>
+            </p> */}
+            <a href="/work">
+              <Button className="max-w-fit bg-black text-white rounded-none shadow-sm">
+                Find out More
+              </Button>
+            </a>
           </div>
           <div className="flex items-center">
-            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black  rounded-full"></div>
+            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black  rounded-full">
+              <img
+                src={img}
+                alt={client}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

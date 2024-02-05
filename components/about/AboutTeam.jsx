@@ -4,9 +4,9 @@ import { ThreeDCardDemo, ThreeDCardDemoTwo } from "../Services/transit/CardDemo"
 const AboutTeam = () => {
   return (
     <div>
-      <div className="p-10">
-        <h1 className="font-bold text-5xl p-1">Meet our Team</h1>
-        <div className="grid grid-cols-5 gap-5 py-5 group">
+      <div className="lg:p-10 p-2">
+        <h1 className="font-bold md:text-5xl text-4xl overflow-hidden lg:text-left text-center p-1">Meet our Team</h1>
+        <div className="grid lg:grid-cols-5 grid-cols-2 lg:gap-5 gap-2 py-5 group">
           <ProfileCard />
           <ProfileCard />
           <ProfileCard />
@@ -32,8 +32,8 @@ export default AboutTeam;
 
 function ProfileCard({}) {
   return (
-    <div className="relative   hover:brightness-100 ">
-      <div className="w-full h-80 bg-red-500 group-hover:opacity-100">
+    <div className="relative   hover:brightness-100 overflow-hidden ">
+      <div className="w-full lg:h-80 h-64 overflow-hidden bg-red-500 group-hover:opacity-100">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
           alt=""
@@ -42,7 +42,7 @@ function ProfileCard({}) {
       </div>
       <div className=""></div>
     
-      <div className="w-full absolute top-0 z-10 h-80 bg-red-500 transition-opacity ease-out duration-300 opacity-0 hover:opacity-100 flex flex-col justify-evenly p-5">
+      <div className="w-full absolute top-0 z-10 lg:h-80 h-64 bg-red-500 transition-opacity ease-out duration-300 opacity-0 hover:opacity-100 flex flex-col justify-evenly p-5">
         <h1 className="text-white font-semibold text-3xl p-1 brightness-110">
           first Name <br /> last Name
         </h1>

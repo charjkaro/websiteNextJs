@@ -42,9 +42,12 @@ const DigitalHero = () => {
         {/* <Services /> */}
 
         <Work />
+        
       </div>
       <div className="bg-[#1b1b1b] text-white">
-        <h1 className="font-bold text-6xl text-center overflow-hidden my-5">Our Services</h1>
+        <h1 className="font-bold text-6xl text-center overflow-hidden my-5">
+          Our Services
+        </h1>
         <DigitalServices />
       </div>
     </div>
@@ -205,50 +208,50 @@ function Reason() {
   return (
     <div className="p-20 ">
       <h1 className="font-bold text-5xl text-center overflow-hidden">
-        Use Transit to Meet Any Objective
+        Use Digital media to Meet Any Objective
       </h1>
       <div className="grid grid-cols-4 mt-10 gap-4 py-2">
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-72 hover:shadow-md hover:shadow-white ">
+        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">
             New Market Exposure
           </h1>
           <div className="w-full mt-2">
             <img
-              src="https://www.onescreen.ai/hs-fs/hubfs/Location_Targeting.png?width=1250&height=750&name=Location_Targeting.png"
-              className="w-full h-full object-center"
+              src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F4.svg?alt=media&token=9969c5fe-c06a-4185-a069-5d33cadec4a4"
+              className="w-full h-full object-top object-contain"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-72 hover:shadow-md hover:shadow-white ">
+        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">New Brand Launch</h1>
           <div className="w-full mt-2">
             <img
-              src="https://www.onescreen.ai/hs-fs/hubfs/Location_Targeting.png?width=1250&height=750&name=Location_Targeting.png"
-              className="w-full h-full object-center"
+              src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F5.svg?alt=media&token=17cf9733-4968-4496-98a0-1e0ed29f655b"
+              className="w-full h-full object-center object-contain"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-72 hover:shadow-md hover:shadow-white ">
+        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">
             New Product Launch
           </h1>
           <div className="w-full mt-2">
             <img
-              src="https://www.onescreen.ai/hs-fs/hubfs/Location_Targeting.png?width=1250&height=750&name=Location_Targeting.png"
+              src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F6.svg?alt=media&token=6fd67143-dc3f-448c-8801-9a858acbfca5"
               className="w-full h-full object-center"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-72 hover:shadow-md hover:shadow-white ">
+        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">
             Raise Brand Awareness
           </h1>
           <div className="w-full mt-2">
             <img
-              src="https://www.onescreen.ai/hs-fs/hubfs/Location_Targeting.png?width=1250&height=750&name=Location_Targeting.png"
+              src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F7.svg?alt=media&token=821786a1-be14-4838-a857-bb46d2bd4376"
               className="w-full h-full object-center"
               alt=""
             />
@@ -454,11 +457,108 @@ const Work = () => {
         </p>
       </div>
       <div className="lg:flex justify-center">
-        <div className="bg-[#C9F24D] lg:p-10 lg:w-4/5 rounded-xl">
-          <CarouselControlsOutside />
+        <div className=" lg:p-10 ">
+          <DigitalServicesSection />
         </div>
       </div>
     </div>
   );
 };
 
+function DigitalServicesSection() {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid gap-4">
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FEZfODEWUYAAfYrn.jpg?alt=media&token=30018ee0-0d66-412d-9311-1e258fba15d0"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FEiL-swWUYAAa_FT.jpg?alt=media&token=259086f5-d586-425e-8345-484f88f3b82e"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FEkrSiC8VkAAQtIx.jpg?alt=media&token=319391b3-6dba-443b-b841-a37d8aec8619"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="grid gap-4">
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FElpesodVoAEIFp-.jpg?alt=media&token=3bd9e197-892a-41df-8504-c87152087331"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FEmc5QvWVgAAqY40.jpg?alt=media&token=c0e5d7a6-3929-4f2e-a2ee-9abee5f3fd41"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FPicture111.png?alt=media&token=acafa7bd-00dc-41b8-8bac-36b5f60e0891"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="grid gap-4">
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FPicture14.png?alt=media&token=69a5c93d-b5d0-4f33-a9d3-09bd9d7d7fae"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FSnapinsta.app_73407410_170794360665915_7222509728567516374_n_1080.jpg?alt=media&token=4ab09501-c71e-4856-861c-accf2f94e4da"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FSnapinsta.app_79222494_473347976651237_4215435222662070664_n_1080.jpg?alt=media&token=5f8f60b6-1324-4562-9459-64d8760bcab4"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="grid gap-4">
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F1%2FSnapinsta.app_79862566_1220848081447094_8931265162270303980_n_1080.jpg?alt=media&token=242c4434-a865-4d9d-9793-0e98e4a5a34f"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F2%2FBajaj%20Ad%20creative%20(1).jpg?alt=media&token=0c2d9ed4-68ae-4bce-b9ac-a3036d810bd7"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/digital%20Services%2F3%2FEulFFr1VgAAJPrz.jpg?alt=media&token=a3621f65-1adc-4226-a549-f9be7244ece3"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

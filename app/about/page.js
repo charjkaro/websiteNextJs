@@ -1,4 +1,5 @@
 import AboutHero from "@/components/about/AboutHero";
+import AboutPartners from "@/components/about/AboutPartners";
 import AboutTeam from "@/components/about/AboutTeam";
 import AboutWork from "@/components/about/AboutWork";
 import Footer from "@/components/common/Footer";
@@ -8,6 +9,7 @@ const page = () => {
   return (
     <div>
       <AboutHero />
+      <AboutPartners />
       <AboutTeam />
       <AboutWork />
       <Footer/>

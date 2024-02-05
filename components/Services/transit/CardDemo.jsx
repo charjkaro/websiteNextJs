@@ -7,7 +7,7 @@ import React from "react";
 
 export function ThreeDCardDemo({ title, subTitle }) {
   return (
-    <CardContainer className="inter-var overflow-hidden">
+    <CardContainer className="inter-var overflow-hidden w-full">
       <CardBody className="  ">
         <CardItem
           translateZ="50"
@@ -18,7 +18,7 @@ export function ThreeDCardDemo({ title, subTitle }) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm max-w-sm hidden lg:flex mt-2 dark:text-neutral-300"
         >
           {subTitle}
         </CardItem>
@@ -35,7 +35,7 @@ export function ThreeDCardDemo({ title, subTitle }) {
         <CardItem
           translateZ={20}
           as="button"
-          className="flex justify-end  w-full"
+          className="lg:flex hidden justify-end  w-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

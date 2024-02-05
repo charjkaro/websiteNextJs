@@ -38,41 +38,41 @@ export default function CarouselLogo() {
       <div className="glide-09 relative w-full bg-[#1B1B1B]  py-10">
         {/* <!-- Slides --> */}
         <div data-glide-el="track">
-          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-5">
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-1.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Kotak_Mahindra_Group_logo.svg/1280px-Kotak_Mahindra_Group_logo.svg.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-2.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-3.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-4.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-5.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo_of_the_Sharp_Corporation.svg/2560px-Logo_of_the_Sharp_Corporation.svg.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-6.svg"
-                className="m-auto h-20 max-h-full w-auto max-w-full"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Lenovo_Global_Corporate_Logo.png/2560px-Lenovo_Global_Corporate_Logo.png"
+                className="m-auto h-10 max-h-full w-auto max-w-full object-contain"
               />
             </li>
           </ul>

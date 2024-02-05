@@ -23,20 +23,20 @@ const Work = () => {
         </h1>
         <div className="flex lg:justify-between justify-center p-5 flex-wrap   lg:px-20 gap-5">
           <Stats
-            count="528%"
-            title="Increase in organic visitors in 6 months"
+            count="10000+"
+            title="CAR WRAPS"
           />
           <Stats
-            count="10+"
-            title="Years Of Experience"
+            count="10M"
+            title="VINYL PRINTING"
           />
           <Stats
-            count="500+"
-            title="Projects Delivered"
+            count="10K+"
+            title="CAMPAIGNS"
           />
           <Stats
-            count="85%"
-            title="Customer Satisfaction Rate"
+            count="8000+"
+            title="CLIENTS SERVED"
           />
         </div>
       </div>

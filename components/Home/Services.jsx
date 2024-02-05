@@ -19,19 +19,19 @@ export const Services = () => {
         <a href="/services/transit">
           <ThreeDCardDemo
             title="Transit Advertisement"
-            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+            subTitle="Effortless commute, unbeatable visibility. Elevate your brand with transit advertising – reach diverse audiences daily, creating lasting impressions that drive success."
           />
         </a>
         <a href="/services/static">
           <ThreeDCardDemo
             title="Static Advertisement"
-            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+            subTitle="Capture attention, make a lasting impact. Static ads deliver timeless messages, ensuring your brand stands out in the static landscape."
           />
         </a>
-        <a href="/services/Digital">
+        <a href="/services/digital">
           <ThreeDCardDemo
             title="Digital Marketing"
-            subTitle="We create high-quality lead magnets that will capture the attention of potential customers and generate leads."
+            subTitle="Dominate the digital realm! Harness the power of targeted ads, real-time analytics, and dynamic engagement for unparalleled brand visibility and growth."
           />
         </a>
 

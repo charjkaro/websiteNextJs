@@ -1,3 +1,4 @@
+import { BlogsData } from "@/Data/Blogs";
 import React from "react";
 
 const Blog = () => {
@@ -11,11 +12,10 @@ const Blog = () => {
         </p>
       </div>
       <div className="flex my-10 justify-evenly gap-4 flex-wrap">
-       <BlogPost title=" What is Neuromarketing & Why It is Crucial for Today’s Marketers"    />
-       <BlogPost title=" What is Neuromarketing & Why It is Crucial for Today’s Marketers"    />
-       <BlogPost title=" What is Neuromarketing & Why It is Crucial for Today’s Marketers"    />
-       <BlogPost title=" What is Neuromarketing & Why It is Crucial for Today’s Marketers"    />
-     
+        {BlogsData.map((blog, index) => (
+          <BlogPost key={index} img={blog.image} link={index} title={blog.title} />
+        ))}
+        
       </div>
     </div>
   );
@@ -23,12 +23,19 @@ const Blog = () => {
 
 export default Blog;
 
-    function BlogPost({img, title}) {
-      return (<div className="w-56">
-          <div className="h-64 w-56 bg-gray-600"></div>
-          <h1 className="font-bold mt-4">
-           {title}
-          </h1>
-        </div>);
-    }
-  
+function BlogPost({ img, title, link }) {
+  return (
+    <div className="w-56">
+      <a href={link}>
+        <div className="h-64 w-56 bg-gray-600">
+          <img
+            src={img}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h1 className="font-bold mt-4">{title}</h1>
+      </a>
+    </div>
+  );
+}

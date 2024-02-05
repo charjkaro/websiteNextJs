@@ -431,7 +431,7 @@ export default function Page({ params }) {
   );
 }
 
-const ContactForm = () => {
+export const ContactForm = () => {
   return (
     <div>
       <div className="bg-[#1b1b1b] py-6 sm:py-8 lg:py-12">

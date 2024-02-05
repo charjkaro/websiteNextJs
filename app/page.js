@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-x-hidden">
       <link
         rel="stylesheet"
         href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"

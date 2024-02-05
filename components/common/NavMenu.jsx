@@ -47,7 +47,7 @@ export default function NavMenu() {
         onOpenChange={onOpenChange}
         size="full"
       >
-        <ModalContent>
+        <ModalContent className="overflow-y-scroll bg-[#1b1b1b]">
           {(onClose) => (
             <>
               <div className="h-full w-full bg-[#1b1b1b] text-white md:p-20 p-5 py-20">

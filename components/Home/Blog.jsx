@@ -13,7 +13,7 @@ const Blog = () => {
       </div>
       <div className="flex my-10 justify-evenly gap-4 flex-wrap">
         {BlogsData.map((blog, index) => (
-          <BlogPost key={index} img={blog.image} link={index} title={blog.title} />
+          <BlogPost key={index} img={blog.image} link={index +1} title={blog.title} />
         ))}
         
       </div>

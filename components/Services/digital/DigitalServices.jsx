@@ -11,7 +11,7 @@ export const DigitalServices = () => {
 
   return (
     <Accordion
-      className="px-20 py-10 gap-10"
+      className="lg:px-20 py-10 gap-10"
       motionProps={{
         variants: {
           enter: {
@@ -52,7 +52,7 @@ export const DigitalServices = () => {
       <AccordionItem
         key="1"
         startContent={
-          <h1 className="font-bold  text-5xl overflow-hidden mb-4">
+          <h1 className="font-bold  lg:text-5xl text-xl overflow-hidden ">
             Creative Service{" "}
           </h1>
         }
@@ -70,10 +70,10 @@ export const DigitalServices = () => {
             return (
               <div
                 key={index}
-                className=" p-5 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
+                className=" lg:p-5 p-2 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
               >
                 {" "}
-                <h1 className="text-xl font-bold">{item.title}</h1>
+                <h1 className="lg:text-xl font-bold">{item.title}</h1>
               </div>
             );
           })}
@@ -82,7 +82,7 @@ export const DigitalServices = () => {
       <AccordionItem
         key="2"
         startContent={
-          <h1 className="font-bold  text-5xl overflow-hidden mb-4">
+          <h1 className="font-bold  lg:text-5xl text-xl overflow-hidden ">
             Media Service{" "}
           </h1>
         }
@@ -100,10 +100,10 @@ export const DigitalServices = () => {
             return (
               <div
                 key={index}
-                className=" p-5 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
+                className=" lg:p-5 p-2 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
               >
                 {" "}
-                <h1 className="text-xl font-bold">{item.title}</h1>
+                <h1 className="lg:text-xl font-bold">{item.title}</h1>
               </div>
             );
           })}
@@ -112,7 +112,7 @@ export const DigitalServices = () => {
       <AccordionItem
         key="3"
         startContent={
-          <h1 className="font-bold  text-5xl overflow-hidden mb-4">
+          <h1 className="font-bold lg:text-5xl text-xl overflow-hidden ">
             Creative Service{" "}
           </h1>
         }
@@ -130,10 +130,10 @@ export const DigitalServices = () => {
             return (
               <div
                 key={index}
-                className=" p-5 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
+                className=" md:p-5 p-2 hover:bg-[#C9F24D]  border-3  transition-all duration-300 hover:text-white hover:border-3 rounded-3xl border-white"
               >
                 {" "}
-                <h1 className="text-xl font-bold">{item.title}</h1>
+                <h1 className="lg:text-xl font-bold">{item.title}</h1>
               </div>
             );
           })}

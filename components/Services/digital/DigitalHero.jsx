@@ -21,11 +21,11 @@ const DigitalHero = () => {
       </div>
       <div className="">
         <div className=" justify-between lg:flex  ">
-          <div className="max-w-2xl  p-10 ">
+          <div className="max-w-2xl  lg:p-10 p-5 ">
             <h1 className="mb-4 text-3xl font-bold">
               Digital Solution with Cash Ur Drive
             </h1>
-            <p className="text-xl leading-loose w-3/4">
+            <p className="text-xl lg:leading-loose lg:w-3/4">
               In a digital world that never sleeps, your brand needs a partner
               that not only keeps up but sets the pace. At CASHurDRIVE, we go
               beyond the conventional – we offer a comprehensive suite of
@@ -206,11 +206,11 @@ function LogoCloud() {
 
 function Reason() {
   return (
-    <div className="p-20 ">
-      <h1 className="font-bold text-5xl text-center overflow-hidden">
+    <div className="lg:p-20 p-5 ">
+      <h1 className="font-bold lg:text-5xl text-4xl text-center overflow-hidden">
         Use Digital media to Meet Any Objective
       </h1>
-      <div className="grid grid-cols-4 mt-10 gap-4 py-2">
+      <div className="grid lg:grid-cols-4 mt-10 gap-4 py-2">
         <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">
             New Market Exposure

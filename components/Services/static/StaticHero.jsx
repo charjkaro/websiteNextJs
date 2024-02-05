@@ -131,11 +131,11 @@ function AboutTransit() {
 
 export function Reason() {
   return (
-    <div className="p-20 ">
-      <h1 className="font-bold text-5xl text-center overflow-hidden">
+    <div className="lg:p-20 p-5 ">
+      <h1 className="font-bold lg:text-5xl text-4xl text-center overflow-hidden">
         Use OOH to Meet Any Objective
       </h1>
-      <div className="grid grid-cols-4 mt-10 gap-4 py-2">
+      <div className="grid lg:grid-cols-4 mt-10 gap-4 py-2">
         <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
           <h1 className="text-center font-bold text-3xl ">
             New Market Exposure
@@ -251,7 +251,7 @@ function TransitServices(params) {
       <h1 className="text-center text-5xl font-bold overflow-hidden ">
         Services We offer
       </h1>
-      <div className="grid-cols-2 grid gap-4 p-20">
+      <div className="lg:grid-cols-2 grid gap-4 lg:p-20 p-5">
         {staticAdvertisingData.map((serviceData, index) => {
           return (
             <div key={index} className="">

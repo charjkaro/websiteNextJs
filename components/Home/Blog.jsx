@@ -13,9 +13,13 @@ const Blog = () => {
       </div>
       <div className="flex my-10 justify-evenly gap-4 flex-wrap">
         {BlogsData.map((blog, index) => (
-          <BlogPost key={index} img={blog.image} link={index +1} title={blog.title} />
+          <BlogPost
+            key={blog.id}
+            img={blog.image}
+            link={blog.id}
+            title={blog.title}
+          />
         ))}
-        
       </div>
     </div>
   );
@@ -28,11 +32,7 @@ function BlogPost({ img, title, link }) {
     <div className="w-56">
       <a href={link}>
         <div className="h-64 w-56 bg-gray-600">
-          <img
-            src={img}
-            alt=""
-            className="w-full h-full object-cover"
-          />
+          <img src={img} alt="" className="w-full h-full object-cover" />
         </div>
         <h1 className="font-bold mt-4">{title}</h1>
       </a>

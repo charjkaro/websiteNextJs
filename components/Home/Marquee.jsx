@@ -35,9 +35,9 @@ export default function CarouselLogo() {
   return (
     <>
       {/*<!-- Component: Testimonial carousel --> */}
-      <div className="glide-09 relative w-full bg-[#1B1B1B]  py-10">
+      <div className="glide-09 relative w-full   py-2">
         {/* <!-- Slides --> */}
-        <div data-glide-el="track">
+        <div data-glide-el="track" className="grayscale">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-5">
             <li>
               <img

@@ -8,7 +8,7 @@ export function SpotlightPreview({ title, subTitle }) {
   return (
     <>
       <div className="relative">
-        <div className="lg:h-[40rem] w-full rounded-md flex md:flex-row items-center lg:justify-evenly  bg-[#1b1b1b] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+        <div className="lg:h-[40rem] w-full rounded-md flex flex-col-reverse lg:flex-row items-center lg:justify-evenly  bg-[#1b1b1b] antialiased bg-grid-white/[0.02] relative overflow-hidden">
           <Spotlight
             className="-top-40 left-0 md:left-60 md:-top-20"
             fill="white"

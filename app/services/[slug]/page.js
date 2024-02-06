@@ -71,7 +71,7 @@ export default function Page({ params }) {
             <h1 className="text-white font-bold lg:text-6xl text-4xl overflow-hidden">
               {serviceData.title}
             </h1>
-            <p className="text-white md:text-xl md:w-1/2 mt-4">
+            <p className="text-white md:text-base md:w-2/3 mt-4">
               {serviceData.description}
             </p>
             <Button

@@ -19,7 +19,8 @@ const Page = ({ params }) => {
           <div className="lg:flex justify-between lg:px-20">
             <div className="prose-sm lg:prose-lg xl:prose-xl prose lg:w-3/4 lg:pl-5 p-5 sm:prose">
               <img src={blog.image} alt="" className="w-full object-cover" />
-              <ReactMarkdown>{blog.markdown}</ReactMarkdown>
+              <ReactMarkdown>{blog.markdown}</ReactMarkdown> 
+            
             </div>
             <div className=" right-0 lg:mr-4 p-5 mt-10  lg:w-1/4 ">
               <h1 className="my-4 text-xl font-semibold">

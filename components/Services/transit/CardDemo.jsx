@@ -11,14 +11,14 @@ export function ThreeDCardDemo({ title, subTitle }) {
       <CardBody className="  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-bold text-white dark:text-white"
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm hidden lg:flex mt-2 dark:text-neutral-300"
+          className="text-gray-400 text-sm max-w-sm hidden lg:flex mt-2 dark:text-neutral-300"
         >
           {subTitle}
         </CardItem>

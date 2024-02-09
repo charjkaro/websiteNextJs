@@ -71,7 +71,7 @@ export default function Page({ params }) {
             <h1 className="text-white font-bold lg:text-6xl text-4xl overflow-hidden">
               {serviceData.title}
             </h1>
-            <p className="text-white md:text-base md:w-2/3 mt-4">
+            <p className="text-white text-tiny  md:text-base md:w-2/3 mt-4">
               {serviceData.description}
             </p>
             <Button
@@ -80,10 +80,10 @@ export default function Page({ params }) {
             >
               Find out More
             </Button>
-            <Modal
+            {/* <Modal
               isOpen={isOpen}
               onOpenChange={onOpenChange}
-              className="bg-transparent hidden lg:flex"
+              className="bg-transparent hidden lg:flex z-50 relative"
               backdrop="blur"
               motionProps={{
                 variants: {
@@ -114,7 +114,7 @@ export default function Page({ params }) {
                     <ModalBody>
                       <form
                         action=""
-                        className="w-96 rounded-2xl  bg-[#1b1b1b] px-3   text-white shadow-2xl  shadow-black  backdrop-blur-2xl "
+                        className="w-96 rounded-2xl z-50 relative  bg-[#1b1b1b] px-3   text-white shadow-2xl  shadow-black  backdrop-blur-2xl "
                       >
                         <h1 className="my-2 text-xl font-bold">Contact Us</h1>
                         <div className="flex flex-col gap-2">
@@ -261,17 +261,19 @@ export default function Page({ params }) {
                   </>
                 )}
               </ModalContent>
-            </Modal>
-            <Modal 
-        isOpen={isOpen} 
-        placement="auto"
-        onOpenChange={onOpenChange} 
-        className="lg:hidden bg-transparent p-0 px-0 py-0"
-      >
-        <ModalContent>
+            </Modal> */}
+            <Modal
+              hidden
+              isOpen={isOpen}
+              backdrop="blur"
+              placement="auto"
+              onOpenChange={onOpenChange}
+              className=" bg-transparent p-0 px-0 py-0"
+            >
+              <ModalContent className="px-0">
                 {(onClose) => (
                   <>
-                    <ModalBody>
+                    <ModalBody className="px-0">
                       <form
                         action=""
                         className="lg:w-96 rounded-2xl  bg-[#1b1b1b] px-3   text-white shadow-2xl  shadow-black  backdrop-blur-2xl "
@@ -301,13 +303,13 @@ export default function Page({ params }) {
                             placeholder="Phone no"
                           />
                         </div>
-                        <div className="flex justify-between">
-                          <button
+                        <div className="flex justify-between items-center ">
+                          <Button
                             type="submit "
-                            className="my-4 inline-block flex-1 rounded-lg bg-indigo-500  text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 sm:flex-none md:text-base"
+                            className="bg-transparent text-white font-bold border-4"
                           >
                             Submit
-                          </button>
+                          </Button>
                           <div className="flex justify-evenly">
                             <a
                               referrerPolicy="no-referrer"
@@ -421,7 +423,7 @@ export default function Page({ params }) {
                   </>
                 )}
               </ModalContent>
-      </Modal>
+            </Modal>
           </div>
         </div>
       </div>

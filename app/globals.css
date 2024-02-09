@@ -7,3 +7,6 @@
   font-family: "Syne";
   
 }
+.markdown > * {
+  all: revert;
+}

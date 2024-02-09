@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import { Button } from "@nextui-org/react";
 import { WorkData } from "@/Data/Work";
+import Image from "next/image";
 
 export default function CarouselControlsOutside() {
   useEffect(() => {
@@ -138,8 +139,10 @@ function CarouselSlide({ client, description, img }) {
             </a>
           </div>
           <div className="flex items-center">
-            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black  rounded-full">
-              <img
+            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black overflow-hidden  rounded-full">
+              <Image
+                width={500}
+                height={500}
                 src={img}
                 alt={client}
                 className="w-full h-full object-cover"

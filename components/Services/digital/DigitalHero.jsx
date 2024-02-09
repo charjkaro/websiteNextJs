@@ -452,7 +452,7 @@ const Work = () => {
       <div className="lg:p-20 p-5 lg:flex items-center justify-between ">
         <h1 className="lg:text-6xl text-5xl p-2 font-bold">Our Recent Work</h1>
         <p className="lg:w-1/3 lg:text-right ">
-          We're not just talkers, we're walkers. We'll show you how our kickass
+          We're not just talkers, we're walkers. We'll show you how our 
           work can help you grow your business
         </p>
       </div>

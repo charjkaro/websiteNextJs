@@ -1,6 +1,7 @@
 import { BlogsData } from "@/Data/Blogs";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
+import Image from "next/image";
 import React, { useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -18,7 +19,7 @@ const Page = ({ params }) => {
         <div>
           <div className="lg:flex justify-between lg:px-20">
             <div className="prose-sm lg:prose-lg xl:prose-xl prose lg:w-3/4 lg:pl-5 p-5 sm:prose">
-              <img src={blog.image} alt="" className="w-full object-cover" />
+              <img width={500} height={500}  src={blog.image} alt="" className="w-full object-cover" />
               <ReactMarkdown>{blog.markdown}</ReactMarkdown> 
             
             </div>

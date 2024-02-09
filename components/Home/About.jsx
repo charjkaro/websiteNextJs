@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -6,7 +7,9 @@ const About = () => {
     <div className="lg:p-20 p-5 lg:flex flex-row-reverse justify-between">
       <div className="flex items-center lg:w-2/5 justify-center">
         {/* <div className="h-96 w-96 rounded-full bg-[url('https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/Company%20Profile.png?alt=media&token=50372bf8-4513-4196-9304-cc9533a3aa02')] bg-cover bg-center"></div> */}
-        <img
+        <Image
+          width={500}
+          height={500}
           src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/Company%20Profile.png?alt=media&token=50372bf8-4513-4196-9304-cc9533a3aa02"
           alt=""
         />

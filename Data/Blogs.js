@@ -60,7 +60,7 @@ One of the primary challenges with promoting pamphlets and publications is that 
 
 But in other places, like a gallery doorway or corridor, being able to display several pamphlets in sevedirections is crucial and so more likely to encourage people to peruse.
 
-This is simple to accomplish thanks to a [dynamic display](https://www.dynamicdisplay.com/), which might lpeople to look around and pick up a pamphlet in addition to encouraging them to do so.
+This is simple to accomplish thanks to a [dynamic display](https://www.dynamicdisplay.com/), which might people to look around and pick up a pamphlet in addition to encouraging them to do so.
 
 People frequently rotate the assortment to make sure they have not forgotten anything.
 

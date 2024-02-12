@@ -4,8 +4,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="lg:p-20 p-5 lg:flex flex-row-reverse justify-between">
-      <div className="flex items-center lg:w-2/5 justify-center">
+    <div className="flex-row-reverse justify-between p-5 lg:flex lg:p-20">
+      <div className="flex items-center justify-center lg:w-2/5">
         {/* <div className="h-96 w-96 rounded-full bg-[url('https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/Company%20Profile.png?alt=media&token=50372bf8-4513-4196-9304-cc9533a3aa02')] bg-cover bg-center"></div> */}
         <Image
           width={500}
@@ -15,8 +15,8 @@ const About = () => {
         />
       </div>
       <div className="lg:w-2/5">
-        <h1 className="lg:text-6xl text-4xl font-bold py-5">About Company</h1>
-        <div className="flex flex-col gap-4 text-xl text-gray-700 font-medium ">
+        <h1 className="py-5 text-4xl font-bold lg:text-6xl">About us</h1>
+        <div className="flex flex-col gap-4 text-xl font-medium text-gray-700 ">
           <p>
             We are experts in crafting dynamic and engaging outdoor advertising
             solutions that ensure your brand stands out.

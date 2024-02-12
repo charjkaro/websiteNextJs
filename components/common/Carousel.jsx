@@ -65,7 +65,7 @@ export default function CarouselControlsOutside() {
           data-glide-el="controls"
         >
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir="<"
             aria-label="prev slide"
           >
@@ -75,7 +75,7 @@ export default function CarouselControlsOutside() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="h-5 w-5"
+              className="h-5 w-5 "
             >
               <title>prev slide</title>
               <path
@@ -86,7 +86,7 @@ export default function CarouselControlsOutside() {
             </svg>
           </button>
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir=">"
             aria-label="next slide"
           >
@@ -120,11 +120,11 @@ function CarouselSlide({ client, description, img }) {
      src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-01.jpg"
      className="m-auto max-h-full w-full max-w-full"
     /> */}
-      <div className=" w-full h-fit  ">
-        <div className="flex flex-col-reverse items-center lg:flex-row  justify-between">
-          <div className="flex flex-col lg:py-10 p-5 gap-4 justify-evenly lg:w-1/2">
-            <h1 className="font-bold text-4xl p-2">{client}</h1>
-            <p className="font-bold text-lg">{description}</p>
+      <div className=" h-fit w-full  ">
+        <div className="flex flex-col-reverse items-center justify-between  lg:flex-row">
+          <div className="flex flex-col justify-evenly gap-4 p-5 lg:w-1/2 lg:py-10">
+            <h1 className="p-2 text-4xl font-bold">{client}</h1>
+            <p className="text-lg font-bold">{description}</p>
             {/* <p>
               Retail Hub is an incubator for D2C brands. With the right
               resources and expertise, Retail Hub develops brands into Digitally
@@ -133,19 +133,19 @@ function CarouselSlide({ client, description, img }) {
               reach their full potential.
             </p> */}
             <a href="/work">
-              <Button className="max-w-fit bg-black text-white rounded-none shadow-sm">
+              <Button className="max-w-fit rounded-none bg-black text-white shadow-sm">
                 Find out More
               </Button>
             </a>
           </div>
           <div className="flex items-center">
-            <div className="lg:w-96 lg:h-96 w-64 h-64 bg-black overflow-hidden  rounded-full">
+            <div className="h-64 w-64 overflow-hidden rounded-full bg-black lg:h-96  lg:w-96">
               <Image
                 width={500}
                 height={500}
                 src={img}
                 alt={client}
-                className="w-full h-full object-cover"
+                className="h-full w-full object-cover"
               />
             </div>
           </div>

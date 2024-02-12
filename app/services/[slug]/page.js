@@ -16,28 +16,23 @@ import {
 } from "@nextui-org/react";
 
 export default function Page({ params }) {
-  let serviceId = params.slug;
-
+  const { slug: serviceId } = params;
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [serviceData, setServiceData] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
-  const service = useMemo(() => {
-    return jsonData.find((service) => service.id === serviceId);
-  }, [serviceId]);
 
   useEffect(() => {
+    const service = jsonData.find((service) => service.id === serviceId);
     setServiceData(service || null);
-  }, [service]);
+  }, [serviceId]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % (serviceData?.images.length || 0)
+        (prevIndex) => (prevIndex + 1) % (serviceData?.images.length || 0),
       );
     }, 3000);
 
-    // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [serviceData]);
 
@@ -49,33 +44,29 @@ export default function Page({ params }) {
     );
   }
 
-  if (!serviceData) {
-    return <div>Cannot find service you are looking for</div>;
-  }
-
   const images = serviceData.images;
 
   return (
     <div>
-      <div className="bg-[#1b1b1b] min-h-[100vh] relative">
+      <div className="relative min-h-[100vh] bg-[#1b1b1b]">
         <img
           src={images[currentImageIndex]}
           alt=""
-          className="w-full h-full absolute top-0 object-cover z-10 brightness-50 "
+          className="absolute top-0 z-10 h-full w-full object-cover brightness-50 "
         />
-        <div className="z-30 absolute top-0 w-full">
+        <div className="absolute top-0 z-30 w-full">
           <Navbar />
         </div>
-        <div className="z-20 absolute top-0 w-full h-full bg-gradient-to-bl via-black/50 from-transparent to-black flex flex-col justify-center">
-          <div className="lg:p-10 p-5  mt-10">
-            <h1 className="text-white font-bold lg:text-6xl text-4xl overflow-hidden">
+        <div className="absolute top-0 z-20 flex h-full w-full flex-col justify-center bg-gradient-to-bl from-transparent via-black/50 to-black">
+          <div className="mt-10 p-5  lg:p-10">
+            <h1 className="overflow-hidden text-4xl font-bold text-white lg:text-6xl">
               {serviceData.title}
             </h1>
-            <p className="text-white text-tiny  md:text-base md:w-2/3 mt-4">
+            <p className="mt-4 text-tiny  text-white md:w-2/3 md:text-base">
               {serviceData.description}
             </p>
             <Button
-              className="text-white bg-transparent border-3 mt-4 border-white"
+              className="mt-4 border-3 border-white bg-transparent text-white"
               onClick={onOpen}
             >
               Find out More
@@ -276,7 +267,7 @@ export default function Page({ params }) {
                     <ModalBody className="px-0">
                       <form
                         action=""
-                        className="lg:w-96 rounded-2xl  bg-[#1b1b1b] px-3   text-white shadow-2xl  shadow-black  backdrop-blur-2xl "
+                        className="rounded-2xl bg-[#1b1b1b]  px-3 text-white   shadow-2xl shadow-black  backdrop-blur-2xl  lg:w-96 "
                       >
                         <h1 className="my-2 text-xl font-bold">Contact Us</h1>
                         <div className="flex flex-col gap-2">
@@ -303,10 +294,10 @@ export default function Page({ params }) {
                             placeholder="Phone no"
                           />
                         </div>
-                        <div className="flex justify-between items-center ">
+                        <div className="flex items-center justify-between ">
                           <Button
                             type="submit "
-                            className="bg-transparent text-white font-bold border-4"
+                            className="border-4 bg-transparent font-bold text-white"
                           >
                             Submit
                           </Button>

@@ -14,7 +14,6 @@ const Footer = () => {
                   className="inline-flex items-center gap-2 text-xl font-bold text-gray-100 md:text-2xl"
                   aria-label="logo"
                 >
-                  
                   Cash ur Drive
                 </a>
               </div>

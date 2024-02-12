@@ -7,8 +7,8 @@ import React from "react";
 
 export function ThreeDCardDemo({ title, subTitle }) {
   return (
-    <CardContainer className="inter-var overflow-hidden w-full">
-      <CardBody className="  ">
+    <CardContainer className="inter-var w-full overflow-hidden">
+      <CardBody className=" group ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-white dark:text-white"
@@ -18,7 +18,7 @@ export function ThreeDCardDemo({ title, subTitle }) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-gray-400 text-sm max-w-sm hidden lg:flex mt-2 dark:text-neutral-300"
+          className=" mt-2 hidden max-w-sm  text-sm text-gray-400 transition-all duration-300 ease-in-out group-hover:ml-1 lg:flex dark:text-neutral-300"
         >
           {subTitle}
         </CardItem>
@@ -35,14 +35,14 @@ export function ThreeDCardDemo({ title, subTitle }) {
         <CardItem
           translateZ={20}
           as="button"
-          className="lg:flex hidden justify-end  w-full"
+          className="hidden w-full justify-end  lg:flex"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={50}
             height={50}
             viewBox="0 -960 960 960"
-            className="invert"
+            className="invert transition-all duration-300 ease-in-out  group-hover:scale-150 group-hover:animate-pulse"
           >
             <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg>
@@ -51,4 +51,3 @@ export function ThreeDCardDemo({ title, subTitle }) {
     </CardContainer>
   );
 }
-

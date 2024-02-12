@@ -26,7 +26,7 @@ export default function NavMenu() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="invert animate-pulse"
+          className="animate-pulse invert"
         >
           <g id="Menu / Menu_Alt_02">
             <path
@@ -50,11 +50,11 @@ export default function NavMenu() {
         <ModalContent className="overflow-y-scroll bg-[#1b1b1b]">
           {(onClose) => (
             <>
-              <div className="h-full w-full bg-[#1b1b1b] text-white md:p-20 p-5 py-20">
+              <div className="h-full w-full bg-[#1b1b1b] p-5 py-20 text-white md:p-20">
                 <ul className="flex flex-col justify-evenly gap-5">
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl  hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl  font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/"
                     >
                       Home.
@@ -62,7 +62,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/services"
                     >
                       Services.
@@ -70,7 +70,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/about"
                     >
                       About.
@@ -79,7 +79,7 @@ export default function NavMenu() {
 
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/work"
                     >
                       Work.
@@ -87,7 +87,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/careers"
                     >
                       Careers.
@@ -95,7 +95,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/contact"
                     >
                       Contact.
@@ -103,7 +103,7 @@ export default function NavMenu() {
                   </li>
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/privacy-policy"
                     >
                       Privacy.
@@ -112,7 +112,7 @@ export default function NavMenu() {
 
                   <li className="overflow-hidden">
                     <a
-                      className="lg:text-8xl md:text-6xl text-4xl hover:tracking-widest font-bold py-2 hover:text-[#FF5F1F] hover:underline transition-all ease-linear duration-250 p-2 "
+                      className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/sitemap"
                     >
                       Sitemap.

@@ -1,17 +1,18 @@
 import React from "react";
+
 import { ThreeDCardDemo } from "../Services/transit/CardDemo";
 
 export const Services = () => {
   return (
-    <div className="bg-[#1B1B1B] text-white">
-      <h1 className="text-center font-bold lg:text-6xl text-4xl pt-10 pb-5">
+    <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/nnnoise.svg?alt=media&token=fd18ab99-b073-4189-87bb-8d1290fccac3')] bg-cover bg-center text-white">
+      <h1 className="pb-5 pt-10 text-center text-4xl font-bold lg:text-6xl">
         Services
       </h1>
-      <p className="text-center lg:text-3xl text-xl font-semibold lg:px-40 py-2">
+      <p className="py-2 text-center text-xl font-semibold lg:px-40 lg:text-3xl">
         At Success Trends, we are committed to delivering high-quality solutions
         that drive business growth.
       </p>
-      <div className="flex flex-col items-center gap-4 py-4 overflow-hidden">
+      <div className="flex flex-col items-center gap-4 overflow-hidden py-4">
         {/* <ServiceComp     />
         <ServiceComp     />
         <ServiceComp     />
@@ -24,8 +25,8 @@ export const Services = () => {
         </a>
         <a href="/services/static">
           <ThreeDCardDemo
-            title="Static Advertisement"
-            subTitle="Capture attention, make a lasting impact. Static ads deliver timeless messages, ensuring your brand stands out in the static landscape."
+            title="OOH Advertisement"
+            subTitle="Capture attention, make a lasting impact. OOH ads deliver timeless messages, ensuring your brand stands out in the static landscape."
           />
         </a>
         <a href="/services/digital">
@@ -48,17 +49,17 @@ export default Services;
 
 function ServiceComp({ props }) {
   return (
-    <div className="grid grid-cols-3 p-8 w-4/5 border-4 hover:bg-gradient-to-tr from-violet-600 to-black via-transparent border-white rounded-full ">
-      <div className="flex justify-center items-center">
-        <h1 className="text-5xl p-2">Lead Magnet</h1>
+    <div className="grid w-4/5 grid-cols-3 rounded-full border-4 border-white from-violet-600 via-transparent to-black p-8 hover:bg-gradient-to-tr ">
+      <div className="flex items-center justify-center">
+        <h1 className="p-2 text-5xl">Lead Magnet</h1>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <p>
           We create high-quality lead magnets that will capture the attention of
           potential customers and generate leads.
         </p>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={50}

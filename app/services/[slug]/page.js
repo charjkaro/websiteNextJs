@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { jsonData } from "@/Data/ServicesList";
-import Navbar from "@/components/common/Navbar";
-import ServiceItem from "@/components/Services/ServiceItem";
-import Footer from "@/components/common/Footer";
+const Navbar = dynamic(() => import("@/components/common/Navbar"));
+const ServiceItem = dynamic(() => import("@/components/Services/ServiceItem"));
+const Footer = dynamic(() => import("@/components/common/Footer"));
 import {
   Button,
   Modal,
@@ -14,6 +14,7 @@ import {
   ModalHeader,
   useDisclosure,
 } from "@nextui-org/react";
+import dynamic from "next/dynamic";
 
 export default function Page({ params }) {
   const { slug: serviceId } = params;
@@ -57,7 +58,7 @@ export default function Page({ params }) {
         <div className="absolute top-0 z-30 w-full">
           <Navbar />
         </div>
-        <div className="absolute top-0 z-20 flex h-full w-full flex-col justify-center bg-gradient-to-bl from-transparent via-black/50 to-black">
+        <div className="absolute top-0 z-20 flex h-full w-full flex-col justify-end bg-gradient-to-bl from-transparent via-black/50 to-black">
           <div className="mt-10 p-5  lg:p-10">
             <h1 className="overflow-hidden text-4xl font-bold text-white lg:text-6xl">
               {serviceData.title}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { digitalData } from "@/Data/DIgitalData";
 import CarouselControlsOutside from "@/components/common/Carousel";

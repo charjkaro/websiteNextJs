@@ -65,7 +65,7 @@ export default function CarouselControlsOutside() {
           data-glide-el="controls"
         >
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 invert transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir="<"
             aria-label="prev slide"
           >
@@ -86,7 +86,7 @@ export default function CarouselControlsOutside() {
             </svg>
           </button>
           <button
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 invert transition duration-300 hover:scale-110 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
             data-glide-dir=">"
             aria-label="next slide"
           >

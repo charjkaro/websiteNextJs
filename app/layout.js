@@ -10,7 +10,7 @@ export const metadata = {
     "We are experts in crafting dynamic and engaging outdoor advertising solutions that ensure your brand stands out.",
   // The name of the author of the website
   keywords: ["Outdoor Advertising", "Brand Marketing", "Dynamic Advertising"], // Relevant keywords for SEO
-  viewport: "width=device-width, initial-scale=1", // For responsive design
+
   charset: "UTF-8", // Character encoding for the website
 };
 
@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-
+        <link rel="icon" type="image/x-icon" href="app\logo.ico"></link>
         <meta name="keywords" content={metadata.keywords.join(", ")} />
-        <meta name="viewport" content={metadata.viewport} />
-        <meta charset={metadata.charset} />
+
+        <meta charSet={metadata.charset} />
       </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>

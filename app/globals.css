@@ -5,7 +5,6 @@
 
 * {
   font-family: "Syne";
-  min-width: 0px;
 }
 .markdown > * {
   all: revert;

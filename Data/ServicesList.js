@@ -126,7 +126,7 @@ export const jsonData = [
     ],
 
     description:
-      "The railway is the largest carrier of passengers in India. So advertising in the railways is the cheapest and most feasible platform to reach to lakhs eyeballs at one go. Be it Metro or Indian Railways, advertising on this platform is the most reasonable method for catching mass perceivability.",
+      "The railway is the largest carrier of passengers in India. So advertising in the railways is the cheapest and most feasible platform to reach to lakhs eyeballs at one go. Be it Metro or Indian Railways, advertising on this platform is the most reasonable method for catching mass perceivably.",
     coveredLocations: ["This Service is Available across India"],
   },
   {
@@ -141,7 +141,7 @@ export const jsonData = [
 
     description:
       "Buses are the major public transport on Indian roads which carry heap of your target audience. A single bus provides a massive advertising space, so imagine what effect your brand will produce when you will advertise with us on a fleet of buses. Advertising on bus captures at least 50 pairs of eyeballs for your brand on average basis.This advertising technique proves highly effective to maximize the reach of your brand at one go.",
-    coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
+    coveredLocations: ["Noida", "Delhi", "Bangalore", "Mumbai", "Chandigarh"],
   },
   {
     id: "22",
@@ -157,7 +157,7 @@ export const jsonData = [
 
     description:
       "Hoarding or Billboard Advertising has a lot of advantages and will definitely continue to be an effective medium. Hoardings or Billboards are visible to the on-going audience and they are quite noticeable.",
-    coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
+    coveredLocations: ["Noida", "Delhi", "Bangalore", "Mumbai", "Chandigarh"],
   },
   {
     id: "24",
@@ -195,7 +195,7 @@ export const jsonData = [
 
     description:
       "Lookwalkers are the newest form of mobile marketing. Lookwalker being an inventive marketing arrangement helps in drawing in and connecting with target crowds. In this type of marketing strategy, walking billboards move in a target area",
-    coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
+    coveredLocations: ["Noida", "Delhi", "Bangalore", "Mumbai", "Chandigarh"],
   },
   {
     id: "20",

@@ -13,7 +13,7 @@ const Work = () => {
         </p>
       </div>
       <div className="lg:flex justify-center">
-        <div className="bg-[#C9F24D] lg:p-10 lg:w-4/5 rounded-xl">
+        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/nnnoise.svg?alt=media&token=fd18ab99-b073-4189-87bb-8d1290fccac3')] bg-cover bg-center  lg:p-10 lg:w-4/5 rounded-xl">
           <CarouselControlsOutside />
         </div>
       </div>

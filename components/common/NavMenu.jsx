@@ -54,10 +54,13 @@ export default function NavMenu() {
                 <ul className="flex flex-col justify-evenly gap-5">
                   <li className="overflow-hidden">
                     <a
-                      className="p-2 py-2 text-4xl  font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
+                      className="p-2 py-2 text-4xl font-bold  transition-all duration-250 ease-linear  hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/"
                     >
-                      Home.
+                      <span className="hover:font-serif">H</span>
+                      <span className="hover:font-serif">o</span>
+                      <span className="hover:font-serif">m</span>
+                      <span className="hover:font-serif">e</span>
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -65,7 +68,14 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/services"
                     >
-                      Services.
+                      <span className="hover:font-serif">S</span>
+                      <span className="hover:font-serif">e</span>
+                      <span className="hover:font-serif">r</span>
+                      <span className="hover:font-serif">v</span>
+                      <span className="hover:font-serif">i</span>
+                      <span className="hover:font-serif">c</span>
+                      <span className="hover:font-serif">e</span>
+                      <span className="hover:font-serif">s</span>
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -73,7 +83,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/about"
                     >
-                      About.
+                      About
                     </a>
                   </li>
 
@@ -82,7 +92,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/work"
                     >
-                      Work.
+                      Work
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -90,7 +100,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/careers"
                     >
-                      Careers.
+                      Careers
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -98,7 +108,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/contact"
                     >
-                      Contact.
+                      Contact
                     </a>
                   </li>
                   <li className="overflow-hidden">
@@ -106,7 +116,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/privacy-policy"
                     >
-                      Privacy.
+                      Privacy
                     </a>
                   </li>
 
@@ -115,7 +125,7 @@ export default function NavMenu() {
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
                       href="/sitemap"
                     >
-                      Sitemap.
+                      Sitemap
                     </a>
                   </li>
                 </ul>

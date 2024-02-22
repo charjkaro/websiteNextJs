@@ -1,22 +1,29 @@
-import AboutFeatures from "@/components/about/AboutFeatures";
-import AboutHero from "@/components/about/AboutHero";
-import AboutPartners from "@/components/about/AboutPartners";
-import AboutPresence from "@/components/about/AboutPresence";
-import AboutTeam from "@/components/about/AboutTeam";
-import AboutWork from "@/components/about/AboutWork";
-import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
+import dynamic from "next/dynamic";
+
+// Dynamically import the components
+const AboutFeatures = dynamic(() => import("@/components/about/AboutFeatures"));
+const AboutHero = dynamic(() => import("@/components/about/AboutHero"));
+const AboutPartners = dynamic(() => import("@/components/about/AboutPartners"));
+const AboutPresence = dynamic(() => import("@/components/about/AboutPresence"));
+const AboutTeam = dynamic(() => import("@/components/about/AboutTeam"));
+const AboutWork = dynamic(() => import("@/components/about/AboutWork"));
+const Footer = dynamic(() => import("@/components/common/Footer"));
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <AboutHero />
+      <div className="min-h-[100vh] bg-[#1b1b1b] text-white">
+        <Navbar />
+        <AboutHero />
+      </div>
       <AboutPartners />
       <AboutPresence />
       <AboutFeatures />
-      <AboutTeam />
+      {/* <AboutTeam /> */}
       <AboutWork />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

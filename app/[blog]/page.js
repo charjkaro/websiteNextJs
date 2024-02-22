@@ -12,7 +12,6 @@ const Page = ({ params }) => {
   }, [blogId]);
   return (
     <>
-    
       <div>
         <div className="invert">
           <Navbar />

@@ -3,11 +3,13 @@
 // import React from "react";
 // import TeamCarouselLogo from "../common/TeamCarousel";
 // import Cursor from "../common/Cursor";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Team = () => {
   return (
-    <div className="p-5 lg:p-10">
+    <motion.div  initial={{ opacity: 0, scale: "30%" }}
+    whileInView={{ opacity: 1, scale: "100%" }}
+    transition={{ duration: 4 }} viewport={{ once: true }} className="p-5 lg:p-10">
       <div className="">
         <h1 className="font-secondary p-2 text-center text-4xl font-bold text-primary lg:text-6xl">
           Meet The Squad!
@@ -62,7 +64,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

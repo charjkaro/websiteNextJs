@@ -1,6 +1,10 @@
+"use client"
+
+import { motion } from "framer-motion";
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import React from "react";
+
 
 const TestTwo = () => {
   return (
@@ -19,7 +23,9 @@ p-5       py-10  lg:p-10"
           in high-traffic areas, we craft memorable experiences that drive
           results.
         </p>
-        <div className="mx-auto mt-4 flex  max-w-fit  gap-4 rounded-2xl bg-primary p-1 lg:rounded-full">
+        <motion.div  initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className="mx-auto mt-4 flex  max-w-fit  gap-4 rounded-2xl bg-primary p-1 lg:rounded-full">
           <div className="mx-auto  grid max-w-fit grid-cols-2  flex-wrap items-center justify-center gap-4 rounded-2xl bg-[#fff] py-5 lg:flex lg:rounded-full lg:py-0   ">
             <Link href="/services/transit">
               <div className="col-span-1 rounded-full shadow-black  transition-colors  duration-200 hover:bg-black hover:shadow-2xl lg:p-10 ">
@@ -531,7 +537,7 @@ p-5       py-10  lg:p-10"
               </div>{" "}
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

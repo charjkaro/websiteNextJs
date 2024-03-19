@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 export default function CarouselLogo() {
   useEffect(() => {
@@ -40,7 +42,9 @@ export default function CarouselLogo() {
   return (
     <>
       {/*<!-- Component: Testimonial carousel --> */}
-      <div className="glide-09 relative mt-10 w-[103vw]  origin-bottom-left  py-5">
+      <motion.div  initial={{ opacity: 0, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className="glide-09 relative mt-10 w-[103vw]  origin-bottom-left  py-5">
         {/* <!-- Slides --> */}
         <div data-glide-el="track" className="">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-5">
@@ -137,7 +141,7 @@ export default function CarouselLogo() {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
       {/*<!-- End Testimonial carousel --> */}
     </>
   );

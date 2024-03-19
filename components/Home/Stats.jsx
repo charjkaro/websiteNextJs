@@ -1,8 +1,15 @@
+"use client"
+
+import { motion } from "framer-motion";
+
+
 const Stats = () => {
   return (
     <div>
       <div className="grid-cols-5 p-5 lg:grid lg:p-10">
-        <div className="col-span-2 flex flex-col justify-evenly gap-5">
+        <motion.div  initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className="col-span-2 flex flex-col justify-evenly gap-5">
           <h1 className="font-secondary max-w-xl text-4xl font-bold lg:text-6xl">
             How Big is Our Impact??
           </h1>
@@ -20,8 +27,10 @@ const Stats = () => {
           <button className="font-primary w-fit bg-black px-10 py-4 font-semibold text-white">
             Click to Action
           </button>
-        </div>
-        <div className="col-span-3  lg:p-5">
+        </motion.div>
+        <motion.div  initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className="col-span-3  lg:p-5">
           <div className="flex translate-y-10 justify-center ">
             {" "}
             <SvgIcon />
@@ -37,7 +46,7 @@ const Stats = () => {
             <div className="h-64 w-full rounded-3xl bg-green-500  "></div>
             <div className="h-64 w-full rounded-3xl bg-green-500  "></div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

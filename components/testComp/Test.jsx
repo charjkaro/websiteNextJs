@@ -3,6 +3,8 @@
 import React, { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 
 const Test = () => {
   const glideRef = useRef(null);
@@ -31,15 +33,19 @@ const Test = () => {
   return (
     <div>
       <div className="  ">
-        <h1 className=" b my-5 bg-primary p-5 px-5  font-secondary text-3xl font-bold text-white lg:px-20 lg:text-5xl">
+        <motion.h1  initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className=" b my-5 bg-primary p-5 px-5  font-secondary text-3xl font-bold text-white lg:px-20 lg:text-5xl">
           Our Services <br /> are&nbsp;
-          <span className="font-secondary text-white underline decoration-[#3dabe4] decoration-wavy">
+          <span className="font-secondary text-white ">
             Tailored
           </span>
           &nbsp;For
-        </h1>
+        </motion.h1>
       </div>
-      <div className="glide relative z-30 py-10" ref={glideRef}>
+      <motion.div  initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }} viewport={{ once: true }} className="glide relative z-30 py-10" ref={glideRef}>
         <div
           data-glide-el="track"
           className="glide__track grid  grid-cols-5 gap-4 px-10"
@@ -82,7 +88,7 @@ const Test = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
       <div className="flex items-center px-5 lg:px-10">
         <Link href="/work">
           <h3 className="mr-3 flex items-center gap-2 text-nowrap rounded-3xl border-3 border-black p-3 font-primary text-xl font-semibold text-blue-500 duration-200 hover:mr-5 hover:translate-x-5 lg:text-nowrap">

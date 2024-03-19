@@ -1,3 +1,9 @@
+import CarouselLogo from "@/components/Home/Marquee";
+import StaticFeatures from "@/components/Services/static/StaticFeatures";
+import StaticHeroDup from "@/components/Services/static/StaticHeroDup";
+import StaticStats from "@/components/Services/static/StaticStats";
+import StaticWork from "@/components/Services/static/StaticWork";
+import Whyus from "@/components/Services/static/Whyus";
 import dynamic from "next/dynamic";
 
 // Dynamically import the StaticHero component
@@ -11,8 +17,14 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <StaticHero />
+    <div className="overflow-x-hidden">
+      {/* <StaticHero /> */}
+      <StaticHeroDup />
+      <CarouselLogo />
+      <StaticFeatures />
+      <Whyus />
+      {/* <StaticStats /> */}
+      <StaticWork />
       <Footer />
     </div>
   );

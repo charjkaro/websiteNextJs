@@ -42,7 +42,7 @@ export const WorkData = [
   },
 
   {
-    id: "7",
+    id: "6",
     title: "M3M",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F13.webp?alt=media&token=86264ac7-0a54-4071-a385-59a4743396d3",
     description:
@@ -50,7 +50,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "8",
+    id: "7",
     title: "Discovery",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F14.webp?alt=media&token=a45fe1a2-1b88-473e-a17a-0357c7d287b2",
     description:
@@ -58,7 +58,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "9",
+    id: "8",
     title: "Kings XI Punjab",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F15.webp?alt=media&token=09da52ee-a883-4303-a6ee-fbcbfe28a8c9",
     description:
@@ -66,7 +66,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "10",
+    id: "9",
     title: "ABBOTT",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F21.webp?alt=media&token=c8b1dac6-1fa6-45f0-b73b-d02d4c7cdf5c",
     description:
@@ -74,7 +74,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "11",
+    id: "10",
     title: "MONDELEZ INTERNATIONAL",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F22.webp?alt=media&token=cfdd7fef-03fa-41d6-a63b-b7c215c8c0b6",
     description:
@@ -82,7 +82,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "12",
+    id: "11",
     title: "Storia",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F23.webp?alt=media&token=9c6e291f-0884-40a8-938d-6f465b31dd42",
     description:
@@ -90,7 +90,7 @@ export const WorkData = [
     coveredLocations: ["Noida", "Delhi", "Banglore", "Mumbai", "Chandigarh"],
   },
   {
-    id: "13",
+    id: "12",
     title: "Rapido",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F24.webp?alt=media&token=71752060-2efe-426d-a67a-8e428e6b4188",
     description:
@@ -114,7 +114,7 @@ export const WorkData = [
   //   coveredLocations: ["South Delhi"],
   // },
   {
-    id: "16",
+    id: "13",
     title: "Prasuma/ADDA 52",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F27.webp?alt=media&token=5496d7f7-211d-4bc5-bfe2-34b88b1bcf2e",
     description:
@@ -130,7 +130,7 @@ export const WorkData = [
   //   coveredLocations: ["Chandigarh"],
   // },
   {
-    id: "17",
+    id: "14",
     title: "CharjKaro",
     img: "https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/work%2F16.webp?alt=media&token=5e08a57a-2f0f-4aeb-8077-1f7281ba8612",
     description:

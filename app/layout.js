@@ -22,7 +22,19 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="icon" type="image/x-icon" href="app\logo.ico"></link>
         <meta name="keywords" content={metadata.keywords.join(", ")} />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=rajdhani@700,300,400,600,500&f[]=sentient@400,700,200,500,300&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+        />
 
+        <link
+          rel="stylesheet"
+          href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+        ></link>
         <meta charSet={metadata.charset} />
       </head>
       <body className={inter.className}>

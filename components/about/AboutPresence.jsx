@@ -3,7 +3,7 @@ import React from "react";
 const AboutPresence = () => {
   return (
     <div className="p-10">
-      <h1 className="font-bold text-2xl w-full">Our Presence in India</h1>
+      <h1 className="font-bold text-4xl w-full">Our Presence in India</h1>
       <div className="grid lg:grid-cols-3 text-white gap-2 mt-10">
         <div className=" w-full   col-span-1 flex items-center justify-center">
           {" "}

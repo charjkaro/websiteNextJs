@@ -5,11 +5,7 @@ const Blog = () => {
   return (
     <div className="p-5 lg:p-20">
       <div className="items-center justify-between lg:flex">
-        <h1 className="p-1 text-4xl font-bold">Latest Blog</h1>
-        <p className="text-gray-500 lg:w-2/4">
-          Choose a topic you’re interested in learning about. If you need to
-          know more, post a comment, and one of our experts will reply.
-        </p>
+        <h1 className="p-1 text-4xl font-bold">News and Updates </h1>
       </div>
       <div className="my-10 grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8">
         {BlogsData.map((blog, index) => (

@@ -1,16 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import { staticAdvertisingData } from "@/Data/ServicesList";
 import Navbar from "@/components/common/Navbar";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 const StaticHero = () => {
   return (
     <div>
       <div className="bg-[#1b1b1b] text-white">
-        <Navbar />
+        <div className="fixed z-50 w-full">
+          <Navbar />
+        </div>
         <Hero />
       </div>
-      <div className="">
+      {/* <div className="">
         <AboutTransit />
       </div>
       <div className="bg-[#1b1b1b] text-white">
@@ -21,7 +26,7 @@ const StaticHero = () => {
       </div>
       <div className="bg-[#1b1b1b] text-white">
         <TransitServices />
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -30,59 +35,41 @@ export default StaticHero;
 
 function Hero(params) {
   return (
-    <div className="">
-      <div className=" pb-6 sm:pb-8 lg:pb-12">
-        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <section className="mb-8 flex flex-col justify-between gap-6 sm:gap-10 md:mb-16 md:gap-16 lg:flex-row">
-            <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-8/12">
-              <h1 className="mb-8 text-4xl font-bold overflow-hidden text-white sm:text-5xl  md:text-5xl">
-                Make Your Message Stand Still, But Not Forgotten
-              </h1>
-              <h1 className="mb-8   overflow-hidden text-white  md:mb-12 ">
-                Transform static spaces into dynamic showcases. Elevate your
-                brand with impactful static advertising.
-              </h1>
-            </div>
-            <div className="h-48 overflow-hidden rounded-xl bg-gray-100 shadow-lg lg:h-96 xl:w-5/12">
-              <img
-                alt="Photo by Fakurian Design"
-                className="h-full w-full object-cover object-center bg-fixed"
-                loading="lazy"
-                src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?auto=format&q=75&fit=crop&w=1000"
-              />
-            </div>
-          </section>
-          <section className="flex flex-col items-center justify-between gap-10 border-t pt-8 lg:flex-row lg:gap-8">
-            <div className="-mx-6 grid grid-cols-3 gap-4 md:-mx-8 md:flex md:divide-x">
-              <div className="px-6 md:px-8">
-                <span className="block text-center text-lg font-bold text-white md:text-left md:text-xl">
-                  200
-                </span>
-                <span className="block text-center text-sm font-semibold text-gray-400 md:text-left md:text-base">
-                  People
-                </span>
-              </div>
-              <div className="px-6 md:px-8">
-                <span className="block text-center text-lg font-bold text-white md:text-left md:text-xl">
-                  500+
-                </span>
-                <span className="block text-center text-sm font-semibold text-gray-400 md:text-left md:text-base">
-                  Projects
-                </span>
-              </div>
-              <div className="px-6 md:px-8">
-                <span className="block text-center text-lg font-bold text-white md:text-left md:text-xl">
-                  250+
-                </span>
-                <span className="block text-center text-sm font-semibold text-gray-400 md:text-left md:text-base">
-                  Customers
-                </span>
-              </div>
-            </div>
-          </section>
-        </div>
+    <>
+      <div className="pb-5 pt-24 text-center  text-white">
+        <h1 className="mx-auto max-w-3xl text-6xl">
+          Make Your Message Stand Still, But Not Forgotten
+        </h1>
+        <p className="mx-auto my-5 max-w-2xl ">
+          Transform static spaces into dynamic showcases. Elevate your brand
+          with impactful static advertising.
+        </p>
+        <button className="rounded-2xl border-2 border-white bg-white p-2 px-8 text-black hover:bg-primary">
+          Contact us
+        </button>
       </div>
-    </div>
+      <motion.div
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="relative mx-auto grid h-[80vh] w-[100vw] grid-cols-5 gap-2 overflow-hidden rounded-t-2xl "
+      >
+        <div className="absolute h-full w-full bg-gradient-to-b from-transparent via-transparent to-black"></div>
+
+        {staticAdvertisingData.slice(0, 10).map((serviceData, index) => (
+          <div key={index} className="h-64 w-full bg-blue-400 rounded-3xl overflow-hidden">
+            <Image
+              height={500}
+              width={500}
+              src={serviceData.images[0]}
+              alt=""
+              className="h-full w-full rounded-xl object-cover"
+            />
+          </div>
+        ))}
+      </motion.div>
+    </>
   );
 }
 
@@ -131,53 +118,53 @@ function AboutTransit() {
 
 export function Reason() {
   return (
-    <div className="lg:p-20 p-5 ">
-      <h1 className="font-bold lg:text-5xl text-4xl text-center overflow-hidden">
+    <div className="p-5 lg:p-20 ">
+      <h1 className="overflow-hidden text-center text-4xl font-bold lg:text-5xl">
         Use OOH to Meet Any Objective
       </h1>
-      <div className="grid lg:grid-cols-4 mt-10 gap-4 py-2">
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+      <div className="mt-10 grid gap-4 py-2 lg:grid-cols-4">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             New Market Exposure
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F4.svg?alt=media&token=9969c5fe-c06a-4185-a069-5d33cadec4a4"
-              className="w-full h-full object-top object-contain"
+              className="h-full w-full object-contain object-top"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">New Brand Launch</h1>
-          <div className="w-full mt-2">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">New Brand Launch</h1>
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F5.svg?alt=media&token=17cf9733-4968-4496-98a0-1e0ed29f655b"
-              className="w-full h-full object-center object-contain"
+              className="h-full w-full object-contain object-center"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             New Product Launch
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F6.svg?alt=media&token=6fd67143-dc3f-448c-8801-9a858acbfca5"
-              className="w-full h-full object-center"
+              className="h-full w-full object-center"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             Raise Brand Awareness
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F7.svg?alt=media&token=821786a1-be14-4838-a857-bb46d2bd4376"
-              className="w-full h-full object-center"
+              className="h-full w-full object-center"
               alt=""
             />
           </div>
@@ -201,42 +188,42 @@ function Partners() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_wordmark.svg/7051px-Samsung_wordmark.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex h-16 items-center justify-center rounded-lg  p-6 text-gray-400 sm:h-24">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex h-16 items-center justify-center rounded-lg  p-6 text-gray-400 sm:h-24">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/2560px-Uber_logo_2018.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex h-16 items-center justify-center rounded-lg  p-6 text-gray-400 sm:h-24">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Logo_of_the_Sharp_Corporation.svg/2560px-Logo_of_the_Sharp_Corporation.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex h-16 items-center justify-center rounded-lg  p-6 text-gray-400 sm:h-24">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex h-16 items-center justify-center rounded-lg  p-6 text-gray-400 sm:h-24">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/1280px-Lenovo_logo_2015.svg.png"
                 alt=""
-                className="object-contain w-full h-full"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
@@ -248,10 +235,10 @@ function Partners() {
 function TransitServices(params) {
   return (
     <div className="py-10">
-      <h1 className="text-center text-5xl font-bold overflow-hidden ">
+      <h1 className="overflow-hidden text-center text-5xl font-bold ">
         Services We offer
       </h1>
-      <div className="lg:grid-cols-2 grid gap-4 lg:p-20 p-5">
+      <div className="grid gap-4 p-5 lg:grid-cols-2 lg:p-20">
         {staticAdvertisingData.map((serviceData, index) => {
           return (
             <div key={index} className="">
@@ -263,7 +250,7 @@ function TransitServices(params) {
                   src={serviceData.images[0]}
                   loading="lazy"
                   alt={serviceData.title}
-                  className="h-full w-full lg:brightness-[30%] hover:brightness-100 object-cover object-center transition ease-soft-spring  duration-200 group-hover:scale-110"
+                  className="h-full w-full object-cover object-center transition duration-200 ease-soft-spring hover:brightness-100  group-hover:scale-110 lg:brightness-[30%]"
                 />
               </a>
               <div>
@@ -293,7 +280,7 @@ function TransitServices(params) {
 
 function ServiceItem({ image, title, subTitle }) {
   return (
-    <div className="w-full h-96 bg-blue-500 relative overflow-hidden">
+    <div className="relative h-96 w-full overflow-hidden bg-blue-500">
       hello
     </div>
   );

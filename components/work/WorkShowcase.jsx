@@ -6,9 +6,10 @@ const WorkShowcase = () => {
   const sequence = [3, 1, 2, 2, 1, 3, 3, 1, 2, 2, 1, 3, 3, 1, 2, 2, 1, 3];
   return (
     <div>
-      <div className="grid md:grid-cols-4 grid-col-2  lg:p-20 p-2 gap-2">
+      <div className="grid-col-2 grid gap-1  p-2 md:grid-cols-4 lg:p-20">
         {WorkData.map((item, index) => (
           <WorkCard
+            id={item.id}
             key={index}
             colSpan={sequence[index]} // Change this line according to your requirement
             img={item.img}
@@ -23,29 +24,30 @@ const WorkShowcase = () => {
 
 export default WorkShowcase;
 
-const WorkCard = ({ colSpan, img, client, detail }) => {
+const WorkCard = ({ colSpan, img, client, detail, id }) => {
   return (
-    <div
-      className={`bg-gray-700 w-full lg:h-72 h-48 rounded-xl lg:col-span-${colSpan}    md:col-span-${colSpan} relative hover:border-[8px] border-[#C9F24D] transition-all duration-300  overflow-hidden`}
+    <a
+      href={`work/${id}`}
+      className={`h-48 w-full rounded-xl bg-gray-700 lg:h-72 lg:col-span-${colSpan}    md:col-span-${colSpan} relative overflow-hidden border-[#C9F24D] transition-all duration-300  hover:border-[8px]`}
     >
       <Image
         width={600}
         height={600}
         src={img}
         alt={client}
-        className="w-full h-full object-cover brightness-[60%] hover:brightness-100 hover:scale-105 transition-all ease-soft-spring duration-200"
+        className="h-full w-full object-cover brightness-[60%] transition-all duration-200 ease-soft-spring hover:scale-105 hover:brightness-100"
       />
-      <div className="absolute z-20 bottom-0 left-0 lg:p-5 text-wrap text-white">
-        <h1 className="lg:text-xl text-sm font-bold">{client}</h1>
+      <div className="absolute bottom-0 left-0 z-20 text-wrap text-white lg:p-5">
+        <h1 className="text-sm font-bold lg:text-xl">{client}</h1>
       </div>
-      <div
-        className="bg-[#1b1b1b] h-full overflow-y-scroll w-full opacity-0 hover:opacity-100 transition-opacity duration-700 absolute top-0 z-10  text-white "
+      {/* <div
+        className="absolute top-0 z-10 h-full w-full overflow-y-scroll bg-[#1b1b1b] text-white opacity-0 transition-opacity duration-700  hover:opacity-100 "
         id="detail"
       >
-        <p className="md:text-base md:p-5 p-1 text-small mb-10 mt-4 ">
+        <p className="mb-10 mt-4 p-1 text-small md:p-5 md:text-base ">
           {detail}
         </p>
-      </div>
-    </div>
+      </div> */}
+    </a>
   );
 };

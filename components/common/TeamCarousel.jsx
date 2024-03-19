@@ -12,7 +12,7 @@ export default function TeamCarouselLogo() {
       autoplay: 1,
       animationDuration: 4500,
       animationTimingFunc: "linear",
-      perView: 4.3,
+      perView: 4.8,
       hoverpause: true,
       classes: {
         nav: {
@@ -62,7 +62,7 @@ export default function TeamCarouselLogo() {
   function PersonCard({ image, name, title }) {
     return (
       <li>
-        <div className="h-72 w-60 bg-gray-500">
+        <div className="h-56 w-44 bg-gray-500">
           <Image
             width={240}
             height={288}

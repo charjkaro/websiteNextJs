@@ -9,11 +9,19 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      primary: ["Rajdhani", "sans-serif"],
+      secondary: ["Sentient", "serif"],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        primary: "#fa9621",
+        secondary: "#39ade3",
       },
       animation: {
         marquee: "marquee 35s linear infinite",

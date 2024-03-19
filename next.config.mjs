@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
- 
   images: {
     remotePatterns: [
       {
@@ -23,6 +21,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "1000logos.net",
       },
     ],
   },

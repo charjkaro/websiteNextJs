@@ -1,8 +1,13 @@
+// import About from "@/components/about/About";
+import AboutAwards from "@/components/about/AboutNews";
+
 import Navbar from "@/components/common/Navbar";
+import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 // Dynamically import the components
 const AboutFeatures = dynamic(() => import("@/components/about/AboutFeatures"));
+const About = dynamic(() => import("@/components/about/About"));
 const AboutHero = dynamic(() => import("@/components/about/AboutHero"));
 const AboutPartners = dynamic(() => import("@/components/about/AboutPartners"));
 const AboutPresence = dynamic(() => import("@/components/about/AboutPresence"));
@@ -14,15 +19,18 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <div className="min-h-[100vh] bg-[#1b1b1b] text-white">
-        <Navbar />
-        <AboutHero />
+      <div className="min-h-[100vh] ">
+        <div className="fixed w-full z-50">
+          <Navbar />
+        </div>
+        <About />
       </div>
-      <AboutPartners />
-      <AboutPresence />
-      <AboutFeatures />
+      {/* <AboutAwards /> */}
+      {/* <AboutPartners /> */}
+      {/* <AboutPresence /> */}
+      {/* <AboutFeatures /> */}
       {/* <AboutTeam /> */}
-      <AboutWork />
+      {/* <AboutWork /> */}
       <Footer />
     </div>
   );

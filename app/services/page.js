@@ -1,30 +1,37 @@
-import dynamic from 'next/dynamic';
+import Work from "@/components/Home/Work";
+import dynamic from "next/dynamic";
 
 // Dynamically import the Services component
-const Services = dynamic(() => import('@/components/Home/Services'));
+const Services = dynamic(() => import("@/components/Home/Services"));
 
 // Dynamically import the ServicesCarousel component
-const ServicesCarousel = dynamic(() => import('@/components/Services/ServicesCarousel'));
+const ServicesCarousel = dynamic(
+  () => import("@/components/Services/ServicesCarousel"),
+);
 
 // Dynamically import the ServicesHero component
-const ServicesHero = dynamic(() => import('@/components/Services/ServicesHero'));
+const ServicesHero = dynamic(
+  () => import("@/components/Services/ServicesHero"),
+);
 
 // Dynamically import the ServicesList component
-const ServicesList = dynamic(() => import('@/components/Services/ServicesList'));
+const ServicesList = dynamic(
+  () => import("@/components/Services/ServicesList"),
+);
 
 // Dynamically import the Footer component
-const Footer = dynamic(() => import('@/components/common/Footer'));
+const Footer = dynamic(() => import("@/components/common/Footer"));
 
 // Dynamically import the Navbar component
-const Navbar = dynamic(() => import('@/components/common/Navbar'));
+const Navbar = dynamic(() => import("@/components/common/Navbar"));
 import React from "react";
 
 const page = () => {
   return (
-    <div className="bg-[#1b1b1b]">
+    <div className="">
       <Navbar />
       {/* <ServicesHero/> */}
-      <Services />
+      <Work />
 
       {/* <ServicesList/> */}
       <Footer />

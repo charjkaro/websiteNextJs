@@ -11,18 +11,19 @@ const AboutHero = () => {
       /> */}
       {/* our team section  */}
       {/* work with us section  */}
+      <div className=" grid grid-cols-2 items-center p-10  py-28">
+        <h1 className="col-span-1 max-w-xl  text-7xl font-bold">
+          You can’t scale profitably without a strong brand
+          <button className="rounded-xl border-2 border-white bg-transparent p-4 text-sm font-light  duration-150 hover:bg-primary">
+            Download Our Deck
+          </button>
+        </h1>
+        <div className="col-span-1 h-96 w-full rounded-xl bg-green-600"></div>
+      </div>
+      <hr className="mx-10 my-10 bg-slate-500" />
       <div className="flex items-center justify-evenly ">
-        <div className="w-1/3">
-          {" "}
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/IMG-20231204-WA0000-removebg-preview%20(1).webp?alt=media&token=7cce3584-6172-4b66-9626-c701738e2e65"
-            alt="cash ur drive"
-            className="h-full w-full object-contain  p-10"
-          />
-        </div>
-        <div className="w-1/2 text-pretty">
-          <h1 className="text-4xl font-bold">Cash ur Drive</h1>
-          <p className="text-base">
+        <div className=" text-pretty">
+          <p className="mb-10  max-w-3xl text-xl  font-bold">
             We are experts in crafting dynamic and engaging outdoor advertising
             solutions that ensure your brand stands out. From transit
             advertisements and eye-catching billboards to below-the-line

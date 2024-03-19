@@ -5,7 +5,7 @@ import { MeteorsDemo } from '../common/Meteor'
 
 const Hero = () => {
   return (
-    <div className='bg-[#1B1B1B]  relative'>
+    <div className='  relative'>
         {/* <Navbar/> */}
         <MeteorsDemo/>
         

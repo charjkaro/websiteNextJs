@@ -46,9 +46,10 @@ const About = () => {
           We're more than just an advertising agency
         </p>
         <motion.p
-          initial={{ opacity: 0, x: -1000 }}
+          initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2 }} viewport={{ once: true }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
           className="my-5 bg-primary p-5 pl-5 font-secondary text-3xl font-bold text-white lg:pl-20 lg:text-5xl"
         >
           Where Advertising Becomes an Art Form &{" "}

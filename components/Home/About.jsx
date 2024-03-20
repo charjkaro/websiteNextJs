@@ -46,7 +46,7 @@ const About = () => {
           We're more than just an advertising agency
         </p>
         <motion.p
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}
           viewport={{ once: true }}

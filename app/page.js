@@ -8,6 +8,7 @@
 // import dynamic from "next/dynamic";
 // const HeroMarquee = dynamic(() => import("@/components/Home/HeroMarquee"));
 
+import Services from "@/components/Home/Services";
 import dynamic from "next/dynamic";
 
 // // Dynamically import the About component
@@ -66,9 +67,9 @@ export default function Home() {
       <Hero />
       {/* <HeroMarquee /> */}
       <About />
-      <Test />
+      <Services />
+      {/* <Test /> */}
       <TestTwo />
-      {/* <Services /> */}
       <div className="relative ">
         <div className=""></div>
         <CarouselLogo />

@@ -15,7 +15,7 @@ const page = () => {
           </div>
           <WorkHero />
         </div>
-        <div className="mt-10 text-center text-7xl font-bold text-black">
+        <div className="mt-10 text-center text-5xl font-bold text-black lg:text-7xl">
           Our Clients
           <CarouselLogo />
         </div>

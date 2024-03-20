@@ -1,34 +1,38 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 const About = () => {
   return (
     <div>
-      <div className="bg-[#F7D446] p-5 py-20 lg:p-10">
-        <div className=" items-center justify-evenly lg:flex  ">
-          <div className=" flex max-w-2xl flex-col gap-4">
-            <h1 className="font-secondary text-5xl first-letter:font-bold lg:text-6xl ">
-              We are
-            </h1>
-            <div className=" w-fit rounded-full bg-black">
-              <h1 className="w-fit -translate-x-2 -translate-y-2 rounded-full border-3 border-black bg-[#F7D446] p-4 font-secondary text-5xl italic duration-150 hover:translate-x-0 hover:translate-y-0 lg:text-7xl">
-                CASH ur Drive
+      <div className="flex min-h-screen items-center justify-center bg-[#F7D446] p-5 py-20 lg:p-10">
+        <div className="">
+          <div className=" items-center justify-evenly lg:flex  ">
+            <div className=" flex max-w-2xl flex-col gap-4">
+              <h1 className="font-secondary text-5xl first-letter:font-bold lg:text-6xl ">
+                We are
+              </h1>
+              <div className=" w-fit rounded-full bg-black">
+                <h1 className="w-fit -translate-x-2 -translate-y-2 rounded-full border-3 border-black bg-[#F7D446] p-4 font-secondary text-5xl italic duration-150 hover:translate-x-0 hover:translate-y-0 lg:text-7xl">
+                  CASH ur Drive
+                </h1>
+              </div>
+              <h1 className="font-secondary text-5xl first-letter:font-bold lg:text-6xl ">
+                Your all in one OOH solution
               </h1>
             </div>
-            <h1 className="font-secondary text-5xl first-letter:font-bold lg:text-6xl ">
-              Your all in one OOH solution
-            </h1>
+            <div className="hidden lg:flex">
+              <SvgIcon />
+            </div>
           </div>
-          <div className="hidden lg:flex">
-            <SvgIcon />
+          <div className="mt-20 flex justify-center lg:mt-5">
+            <button className="mx-auto bg-black p-5 px-10 text-center  font-primary text-white">
+              Get Started Now
+            </button>
           </div>
+          <Socials />
         </div>
-        <div className="mt-20 flex justify-center lg:mt-5">
-          <button className="mx-auto bg-black p-5 px-10 text-center  font-primary text-white">
-            Get Started Now
-          </button>
-        </div>
-        <Socials />
       </div>
       <div className="mt-10 items-start  justify-evenly p-5  lg:flex lg:p-10">
         <div className="">

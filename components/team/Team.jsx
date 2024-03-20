@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from "next/link";
 import React from "react";
 
 const Team = () => {
@@ -147,7 +148,7 @@ const SectionFour = () => {
       </p>
       <div className="mt-4 justify-evenly lg:flex">
         <div className="h-80 w-full rounded-2xl bg-blue-500 lg:w-72"></div>
-        <div className="lg:w-72 h-80 w-full rounded-2xl bg-blue-500"></div>
+        <div className="h-80 w-full rounded-2xl bg-blue-500 lg:w-72"></div>
       </div>
     </div>
   );
@@ -155,13 +156,15 @@ const SectionFour = () => {
 const SectionFive = () => {
   return (
     <div className="mt-10">
-      <div className=" overflow-y-hidden bg-primary p-10 py-10 text-center text-white">
-        <h1 className="mx-auto my-5 max-w-2xl font-secondary text-4xl  font-bold text-white lg:text-6xl">
+      <div className=" overflow-y-hidden bg-primary p-10 text-center text-white">
+        <h1 className="mx-auto my-5  font-secondary text-2xl font-bold text-white  lg:text-nowrap lg:text-4xl lg:text-5xl">
           Think you can play to our rhythm?{" "}
         </h1>
-        <button className="border-white bg-orange-500 px-10 py-4 font-primary text-xl font-bold hover:border-3 hover:bg-black">
-          Join Us
-        </button>
+        <Link href="/team/career">
+          <button className="border-white bg-orange-500 p-2 px-10 font-primary text-xl font-bold hover:bg-black  lg:py-4">
+            Join Us
+          </button>
+        </Link>
       </div>
     </div>
   );

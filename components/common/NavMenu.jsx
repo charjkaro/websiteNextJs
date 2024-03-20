@@ -90,7 +90,7 @@ export default function NavMenu() {
                   <li className="overflow-hidden">
                     <Link
                       className="p-2 py-2 text-4xl font-bold transition-all duration-250 ease-linear hover:tracking-widest hover:text-[#FF5F1F] hover:underline md:text-6xl lg:text-8xl "
-                      href="/careers"
+                      href="/team/career"
                     >
                       Careers
                     </Link>

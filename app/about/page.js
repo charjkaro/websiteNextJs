@@ -1,18 +1,18 @@
 // import About from "@/components/about/About";
-import AboutAwards from "@/components/about/AboutNews";
+// import AboutAwards from "@/components/about/AboutNews";
 
 import Navbar from "@/components/common/Navbar";
-import { motion } from "framer-motion";
+
 import dynamic from "next/dynamic";
 
 // Dynamically import the components
-const AboutFeatures = dynamic(() => import("@/components/about/AboutFeatures"));
+// const AboutFeatures = dynamic(() => import("@/components/about/AboutFeatures"));
 const About = dynamic(() => import("@/components/about/About"));
-const AboutHero = dynamic(() => import("@/components/about/AboutHero"));
-const AboutPartners = dynamic(() => import("@/components/about/AboutPartners"));
-const AboutPresence = dynamic(() => import("@/components/about/AboutPresence"));
-const AboutTeam = dynamic(() => import("@/components/about/AboutTeam"));
-const AboutWork = dynamic(() => import("@/components/about/AboutWork"));
+// const AboutHero = dynamic(() => import("@/components/about/AboutHero"));
+// const AboutPartners = dynamic(() => import("@/components/about/AboutPartners"));
+// const AboutPresence = dynamic(() => import("@/components/about/AboutPresence"));
+// const AboutTeam = dynamic(() => import("@/components/about/AboutTeam"));
+// const AboutWork = dynamic(() => import("@/components/about/AboutWork"));
 const Footer = dynamic(() => import("@/components/common/Footer"));
 import React from "react";
 

@@ -38,17 +38,18 @@ const About = () => {
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }} viewport={{ once: true }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
         className=""
       >
         <p className="pl-5 text-2xl font-bold lg:pl-20 lg:text-4xl">
           We're more than just an advertising agency
         </p>
         <motion.p
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -1000 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3 }} viewport={{ once: true }}
-          className="font-secondary my-5 bg-primary p-5 pl-5 text-3xl font-bold text-white lg:pl-20 lg:text-5xl"
+          transition={{ duration: 2 }} viewport={{ once: true }}
+          className="my-5 bg-primary p-5 pl-5 font-secondary text-3xl font-bold text-white lg:pl-20 lg:text-5xl"
         >
           Where Advertising Becomes an Art Form &{" "}
         </motion.p>

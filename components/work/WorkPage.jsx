@@ -4,7 +4,7 @@ import React from "react";
 
 const WorkPage = ({ title, description, image, i1, i2, i1Link, i2Link }) => {
   return (
-    <div className=" p-10">
+    <div className=" p-5 pt-32  lg:p-10">
       <a
         href="/work"
         className="flex items-center gap-4 duration-250 hover:translate-x-2"
@@ -24,7 +24,7 @@ const WorkPage = ({ title, description, image, i1, i2, i1Link, i2Link }) => {
         <AccordionItem
           startContent={
             <>
-              <h1 className="text-8xl text-black duration-200 hover:text-primary">
+              <h1 className="text-wrap text-2xl text-black duration-200 hover:text-primary lg:text-8xl">
                 Client: {title}
               </h1>{" "}
             </>
@@ -32,7 +32,7 @@ const WorkPage = ({ title, description, image, i1, i2, i1Link, i2Link }) => {
           key="1"
           aria-label="Accordion 1"
         >
-          <div className="max-w-2xl text-xl">{description}</div>
+          <div className="lg:text-xl lg:max-w-2xl">{description}</div>
         </AccordionItem>
       </Accordion>
       <div className="mb-4  h-[30rem] w-full">

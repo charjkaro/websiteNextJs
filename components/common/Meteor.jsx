@@ -56,7 +56,13 @@ export function MeteorsDemo() {
       <div className="fixed z-50 w-full ">
         <Navbar />
       </div>
-      <div className="pt-14">
+      <motion.div
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        className="pt-14"
+      >
         <div className="relative">
           <div className="flex flex-col-reverse items-center justify-evenly p-5 lg:flex-row">
             <div className="flex max-w-xl flex-col gap-4">
@@ -88,7 +94,7 @@ export function MeteorsDemo() {
             <DataButton />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { digitalData } from "@/Data/DIgitalData";
@@ -22,11 +23,11 @@ const DigitalHero = () => {
       </div>
       <div className="">
         <div className=" justify-between lg:flex  ">
-          <div className="max-w-2xl  lg:p-10 p-5 ">
+          <div className="max-w-2xl  p-5 lg:p-10 ">
             <h1 className="mb-4 text-3xl font-bold">
               Digital Solution with Cash Ur Drive
             </h1>
-            <p className="text-xl lg:leading-loose lg:w-3/4">
+            <p className="text-xl lg:w-3/4 lg:leading-loose">
               In a digital world that never sleeps, your brand needs a partner
               that not only keeps up but sets the pace. At CASHurDRIVE, we go
               beyond the conventional – we offer a comprehensive suite of
@@ -43,10 +44,9 @@ const DigitalHero = () => {
         {/* <Services /> */}
 
         <Work />
-        
       </div>
       <div className="bg-[#1b1b1b] text-white">
-        <h1 className="font-bold text-6xl text-center overflow-hidden my-5">
+        <h1 className="my-5 overflow-hidden text-center text-6xl font-bold">
           Our Services
         </h1>
         <DigitalServices />
@@ -64,7 +64,7 @@ function Hero(params) {
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <section className="mb-8 flex flex-col justify-between gap-6 sm:gap-10 md:mb-16 md:gap-16 lg:flex-row">
             <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-8/12">
-              <h1 className="mb-8 text-4xl font-bold overflow-hidden text-white sm:text-5xl  md:text-5xl">
+              <h1 className="mb-8 overflow-hidden text-4xl font-bold text-white sm:text-5xl  md:text-5xl">
                 Digital Excellence: Your Brand, Amplified Online
               </h1>
               <h1 className="mb-8   overflow-hidden text-white  md:mb-12 ">
@@ -75,7 +75,7 @@ function Hero(params) {
             <div className="h-48 overflow-hidden rounded-xl bg-gray-100 shadow-lg lg:h-96 xl:w-5/12">
               <img
                 alt="Photo by Fakurian Design"
-                className="h-full w-full object-cover object-center bg-fixed"
+                className="h-full w-full bg-fixed object-cover object-center"
                 loading="lazy"
                 src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?auto=format&q=75&fit=crop&w=1000"
               />
@@ -207,53 +207,53 @@ function LogoCloud() {
 
 function Reason() {
   return (
-    <div className="lg:p-20 p-5 ">
-      <h1 className="font-bold lg:text-5xl text-4xl text-center overflow-hidden">
+    <div className="p-5 lg:p-20 ">
+      <h1 className="overflow-hidden text-center text-4xl font-bold lg:text-5xl">
         Use Digital media to Meet Any Objective
       </h1>
-      <div className="grid lg:grid-cols-4 mt-10 gap-4 py-2">
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+      <div className="mt-10 grid gap-4 py-2 lg:grid-cols-4">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             New Market Exposure
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F4.svg?alt=media&token=9969c5fe-c06a-4185-a069-5d33cadec4a4"
-              className="w-full h-full object-top object-contain"
+              className="h-full w-full object-contain object-top"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">New Brand Launch</h1>
-          <div className="w-full mt-2">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">New Brand Launch</h1>
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F5.svg?alt=media&token=17cf9733-4968-4496-98a0-1e0ed29f655b"
-              className="w-full h-full object-center object-contain"
+              className="h-full w-full object-contain object-center"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             New Product Launch
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F6.svg?alt=media&token=6fd67143-dc3f-448c-8801-9a858acbfca5"
-              className="w-full h-full object-center"
+              className="h-full w-full object-center"
               alt=""
             />
           </div>
         </div>
-        <div className="w-full p-5 hover:bg-gray-600 rounded-2xl overflow-hidden transition-all duration-400 h-96 hover:shadow-md hover:shadow-white ">
-          <h1 className="text-center font-bold text-3xl ">
+        <div className="h-96 w-full overflow-hidden rounded-2xl p-5 transition-all duration-400 hover:bg-gray-600 hover:shadow-md hover:shadow-white ">
+          <h1 className="text-center text-3xl font-bold ">
             Raise Brand Awareness
           </h1>
-          <div className="w-full mt-2">
+          <div className="mt-2 w-full">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cashurdrive-28087.appspot.com/o/icons%2F7.svg?alt=media&token=821786a1-be14-4838-a857-bb46d2bd4376"
-              className="w-full h-full object-center"
+              className="h-full w-full object-center"
               alt=""
             />
           </div>
@@ -265,7 +265,7 @@ function Reason() {
 function Services() {
   return (
     <div className="">
-      <h1 className="text-center font-bold text-5xl mt-10 overflow-hidden">
+      <h1 className="mt-10 overflow-hidden text-center text-5xl font-bold">
         Our Digital Services
       </h1>
       <div className="my-4">
@@ -276,7 +276,7 @@ function Services() {
             className="w-1/3"
           />
           <div className="max-w-2xl">
-            <h1 className="font-bold text-4xl overflow-hidden max-w-2xl">
+            <h1 className="max-w-2xl overflow-hidden text-4xl font-bold">
               Creative Solution
             </h1>
             <p className="text-sm">
@@ -300,22 +300,22 @@ function Services() {
           </div>
         </div>
         <div className="">
-          <div className=" gap-2 grid grid-cols-12 grid-rows-2 px-8">
+          <div className=" grid grid-cols-12 grid-rows-2 gap-2 px-8">
             {digitalData.slice(0, 7).map((item, index) => {
               return (
-                <Card key={index} className=" sm:col-span-4 h-[300px]">
-                  <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                    <p className="text-tiny text-black/60 uppercase font-bold">
+                <Card key={index} className=" h-[300px] sm:col-span-4">
+                  <CardHeader className="absolute top-1 z-10 flex-col !items-start">
+                    <p className="text-tiny font-bold uppercase text-black/60">
                       {item.subTitle}
                     </p>
-                    <h4 className="text-white font-bold text-xl mt-2 mb-2 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <h4 className="mb-2 mt-2 overflow-hidden text-ellipsis whitespace-nowrap text-xl font-bold text-white">
                       {item.title}
                     </h4>
                   </CardHeader>
                   <Image
                     removeWrapper
                     alt="Card background"
-                    className="z-0 w-full h-full object-cover  brightness-50 hover:brightness-100 transition-all duration-300"
+                    className="z-0 h-full w-full object-cover  brightness-50 transition-all duration-300 hover:brightness-100"
                     src={item.img}
                   />
                 </Card>
@@ -333,7 +333,7 @@ function Services() {
             className="w-1/3"
           />
           <div className="max-w-2xl">
-            <h1 className="font-bold text-4xl overflow-hidden max-w-2xl">
+            <h1 className="max-w-2xl overflow-hidden text-4xl font-bold">
               Media Solution
             </h1>
             <p className="text-sm">
@@ -359,22 +359,22 @@ function Services() {
           </div>
         </div>
         <div className="">
-          <div className=" gap-2 grid grid-cols-12  px-8">
+          <div className=" grid grid-cols-12 gap-2  px-8">
             {digitalData.slice(7, 10).map((item, index) => {
               return (
-                <Card key={index} className=" sm:col-span-4 h-[300px]">
-                  <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                    <p className="text-tiny text-black/60 uppercase font-bold">
+                <Card key={index} className=" h-[300px] sm:col-span-4">
+                  <CardHeader className="absolute top-1 z-10 flex-col !items-start">
+                    <p className="text-tiny font-bold uppercase text-black/60">
                       {item.subTitle}
                     </p>
-                    <h4 className="text-white font-bold text-xl mt-2 mb-2 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <h4 className="mb-2 mt-2 overflow-hidden text-ellipsis whitespace-nowrap text-xl font-bold text-white">
                       {item.title}
                     </h4>
                   </CardHeader>
                   <Image
                     removeWrapper
                     alt="Card background"
-                    className="z-0 w-full h-full object-cover  brightness-50 hover:brightness-100 transition-all duration-300"
+                    className="z-0 h-full w-full object-cover  brightness-50 transition-all duration-300 hover:brightness-100"
                     src={item.img}
                   />
                 </Card>
@@ -392,7 +392,7 @@ function Services() {
             className="w-1/3"
           />
           <div className="max-w-2xl">
-            <h1 className="font-bold text-4xl overflow-hidden max-w-2xl">
+            <h1 className="max-w-2xl overflow-hidden text-4xl font-bold">
               Digital Solution
             </h1>
             <p className="text-sm">
@@ -419,22 +419,22 @@ function Services() {
           </div>
         </div>
         <div className="">
-          <div className=" gap-2 grid grid-cols-9 grid-rows-2 px-8">
+          <div className=" grid grid-cols-9 grid-rows-2 gap-2 px-8">
             {digitalData.slice(10, 16).map((item, index) => {
               return (
-                <Card key={index} className=" sm:col-span-4 h-[300px]">
-                  <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                    <p className="text-tiny text-black/60 uppercase font-bold">
+                <Card key={index} className=" h-[300px] sm:col-span-4">
+                  <CardHeader className="absolute top-1 z-10 flex-col !items-start">
+                    <p className="text-tiny font-bold uppercase text-black/60">
                       {item.subTitle}
                     </p>
-                    <h4 className="text-white font-bold text-xl mt-2 mb-2 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <h4 className="mb-2 mt-2 overflow-hidden text-ellipsis whitespace-nowrap text-xl font-bold text-white">
                       {item.title}
                     </h4>
                   </CardHeader>
                   <Image
                     removeWrapper
                     alt="Card background"
-                    className="z-0 w-full h-full object-cover  brightness-50 hover:brightness-100 transition-all duration-300"
+                    className="z-0 h-full w-full object-cover  brightness-50 transition-all duration-300 hover:brightness-100"
                     src={item.img}
                   />
                 </Card>
@@ -450,14 +450,14 @@ function Services() {
 const Work = () => {
   return (
     <div className="my-5">
-      <div className="lg:p-20 p-5 lg:flex items-center justify-between ">
-        <h1 className="lg:text-6xl text-5xl p-2 font-bold">Our Recent Work</h1>
+      <div className="items-center justify-between p-5 lg:flex lg:p-20 ">
+        <h1 className="p-2 text-5xl font-bold lg:text-6xl">Our Recent Work</h1>
         <p className="lg:w-1/3 lg:text-right ">
-          We're not just talkers, we're walkers. We'll show you how our 
-          work can help you grow your business
+          We're not just talkers, we're walkers. We'll show you how our work can
+          help you grow your business
         </p>
       </div>
-      <div className="lg:flex justify-center">
+      <div className="justify-center lg:flex">
         <div className=" lg:p-10 ">
           <DigitalServicesSection />
         </div>
@@ -468,7 +468,7 @@ const Work = () => {
 
 function DigitalServicesSection() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
       <div className="grid gap-4">
         <div>
           <img

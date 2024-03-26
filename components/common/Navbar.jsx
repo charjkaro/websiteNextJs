@@ -3,16 +3,20 @@
 import React, { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
+  const [textColor, settextColor] = useState("white");
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 30) {
         setBackgroundColor("white");
+        settextColor("black");
       } else {
         setBackgroundColor("transparent");
+        settextColor("white");
       }
     };
 
@@ -37,7 +41,23 @@ const Navbar = () => {
             className="w-16"
           />
         </a>
-        <NavMenu />
+        <ul className={`hidden gap-5 font-semibold text-${textColor} lg:flex`}>
+          <Link href="/services/static" className="text-blue-500">
+            OOH
+          </Link>
+          <Link href="/services/transit">Transit</Link>
+          <Link href="/services/digital">Digital</Link>
+          <Link href="/services/green">Green</Link>
+          <Link href="/about">About</Link>
+          <Link href="/team">Team</Link>
+          <Link href="/team/career">Career</Link>
+        </ul>
+        <button className="hidden bg-black p-3 px-5 text-white lg:flex">
+          Contact us
+        </button>
+        <div className="lg:hidden">
+          <NavMenu />
+        </div>
       </div>
     </div>
   );

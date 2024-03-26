@@ -8,6 +8,7 @@
 // import dynamic from "next/dynamic";
 // const HeroMarquee = dynamic(() => import("@/components/Home/HeroMarquee"));
 
+import Chat from "@/components/Chatbot/Chat";
 import Services from "@/components/Home/Services";
 import dynamic from "next/dynamic";
 
@@ -61,14 +62,14 @@ const Footer = dynamic(() => import("@/components/common/Footer"));
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
-      <Cursor color="black" />
-
+    <main className="overflow-x-hidden bg-cover bg-fixed  ">
       <Hero />
+
       {/* <HeroMarquee /> */}
       <About />
       <Services />
       {/* <Test /> */}
+
       <TestTwo />
       <div className="relative ">
         <div className=""></div>
@@ -78,7 +79,21 @@ export default function Home() {
       {/* <Marquee /> */}
       {/* <Work /> */}
       <Team />
-      <FAQ />
+      <FAQ
+        q1="What is CashurDrive and how does it benefit my brand?"
+        s1="CashurDrive is a leading outdoor advertising agency specializing in innovative advertising solutions across OOH, transit, and green advertising mediums. Our services enhance brand visibility, engage target audiences, and drive impactful results."
+        q2="What advertising solutions does CashurDrive offer?"
+        s2="We offer a diverse range of advertising solutions including digital and traditional billboards, transit advertising on buses, cabs, and autos, eco-friendly green advertising, and customized campaigns tailored to meet specific brand needs."
+        q3="How does CashurDrive ensure my advertising campaign is successful?"
+        s3="Utilizing advanced analytics, strategic placement, and creative design, CashurDrive ensures campaign success by targeting the right audience at the right time, maximizing visibility and engagement."
+        q4="Can CashurDrive help design my advertising campaign?"
+        s4="Absolutely! Our team of creative experts is adept at crafting eye-catching and effective advertising campaigns that resonate with audiences, amplifying your brand message across any medium."
+        q5="What makes CashurDrive different from other advertising agencies?"
+        s5="CashurDrive sets itself apart with a commitment to innovation, sustainability in advertising, and personalized campaign strategies that align closely with client objectives, ensuring not just reach but meaningful engagement."
+        q6="How can I start an advertising campaign with CashurDrive?"
+        s6="Starting your advertising journey with CashurDrive is easy. Contact us through our website or give us a call. Our dedicated team will guide you through the process, from planning and strategy to execution and analysis."
+      />
+
       <CTA />
       <Blog />
       <Footer />

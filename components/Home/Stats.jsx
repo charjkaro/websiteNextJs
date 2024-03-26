@@ -1,19 +1,22 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
-
 
 const Stats = () => {
   return (
     <div>
       <div className="grid-cols-5 p-5 lg:grid lg:p-10">
-        <motion.div  initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }} viewport={{ once: true }} className="col-span-2 flex flex-col justify-evenly gap-5">
-          <h1 className="font-secondary max-w-xl text-4xl font-bold lg:text-6xl">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="col-span-2 flex flex-col justify-evenly gap-5"
+        >
+          <h1 className="max-w-xl font-secondary text-4xl font-bold lg:text-6xl">
             How Big is Our Impact??
           </h1>
-          <p className="font-primary max-w-xl font-semibold">
+          <p className="max-w-xl font-primary font-semibold">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
             voluptate voluptatum, incidunt deserunt ea maiores harum culpa
             obcaecati iste sunt, est aperiam aut odio? Consequatur sit, vitae,
@@ -24,16 +27,20 @@ const Stats = () => {
             accusamus veniam tenetur illo assumenda! Possimus dolor vitae quod
             labore culpa dolorem libero eos accusamus itaque deserunt.
           </p>
-          <button className="font-primary w-fit bg-black px-10 py-4 font-semibold text-white">
+          <button className="w-fit bg-black px-10 py-4 font-primary font-semibold text-white">
             Click to Action
           </button>
         </motion.div>
-        <motion.div  initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }} viewport={{ once: true }} className="col-span-3  lg:p-5">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
+          className="col-span-3  lg:p-5"
+        >
           <div className="flex translate-y-10 justify-center ">
             {" "}
-            <SvgIcon />
+            {/* <SvgIcon /> */}
           </div>
           <div className="grid min-h-52 w-full grid-cols-2 gap-1 rounded-2xl border-3 border-black p-5 lg:grid-cols-4">
             <StatCard />

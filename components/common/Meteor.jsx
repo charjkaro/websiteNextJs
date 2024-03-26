@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import React from "react";
@@ -52,11 +53,12 @@ export function MeteorsDemo() {
     //     {/* <div className="col-span-1 h-full w-full bg-green-600"></div> */}
     //   </div>
     // </motion.div>
-    <div>
+    <div className="min-h-screen bg-black">
       <div className="fixed z-50 w-full ">
         <Navbar />
       </div>
-      <motion.div
+      {/* hero section starts here  */}
+      {/* <motion.div
         initial={{ opacity: 0, x: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2 }}
@@ -94,7 +96,45 @@ export function MeteorsDemo() {
             <DataButton />
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
+      <div className="flex min-h-screen w-full items-center justify-center p-5 text-white  lg:p-10">
+        <div className=" max-w-3xl lg:text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold md:text-6xl"
+          >
+            Echoes in the City: Crafting Next-Level Brand Adventures
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            className="mt-4 font-secondary text-sm"
+          >
+            Echoes in the City: Reach million with our advertising services.
+            Make your brand resonate across the urban landscape. Let's amplify
+            your story.
+          </motion.p>
+          <button className="mt-5 bg-white p-3 md:px-6 font-bold text-black">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div className="flex -translate-y-20 animate-bounce justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height={100}
+          viewBox="0 -960 960 960"
+          width={100}
+          className="invert"
+        >
+          <path d="M480-344 240-584l56-56 184 184 184-184 56 56z" />
+        </svg>
+      </div>
     </div>
   );
 }

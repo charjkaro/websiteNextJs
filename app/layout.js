@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import Cursor from "@/components/common/Cursor";
+import Chat from "@/components/Chatbot/Chat";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +40,12 @@ export default function RootLayout({ children }) {
         <meta charSet={metadata.charset} />
       </head>
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children} <Cursor color="black" />
+        </Providers>
+        <div className="fixed bottom-5 right-5">
+          <Chat />
+        </div>
       </body>
     </html>
   );
